@@ -1,2 +1,9 @@
-# IBM-dictionary-storage
-Customized dictionary application geared towards IBM storage sellers terminology.
+# An ibm_terminology_lookup Flet app
+
+An example of a minimal Flet app.
+
+To run the app:
+
+```
+flet run [app_directory]
+```

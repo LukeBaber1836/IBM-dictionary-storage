@@ -1,0 +1,1838 @@
+{
+    "access": [
+        "The ability to read, update, or otherwise use a resource. Access to protected resources is usually controlled by system software.", "To obtain computing services or data."
+    ],
+    "access-any mode": [
+        "One of the two access modes that can be set for the ESS during initial configuration. It enables all host systems, attached to Fibre Channel and with no defined access profile, to access all logical volumes (LVOLs) on the ESS. With a profile defined in ESS Specialist for a particular host, that host has access only to volumes that are assigned to the worldwide port name (WWPN) for that host. See also pseudohost, worldwide port name."
+    ],
+    "ack": [
+        "See acknowledgment character."
+    ],
+    "acknowledgment character (ack)": [
+        "A transmission control character that is sent as an affirmative response to a data transmission."
+    ],
+    "activation key": [
+        "See license key."
+    ],
+    "advisory lock": [
+        "A type of lock that a process holds on a region of a file that signals any other process to not use or lock the region or an overlapping region. Other processes are not forced to comply."
+    ],
+    "alert": [
+        "A message or other indication that signals an event or an impending event that meets a set of specified criteria."
+    ],
+    "alias address identifier": [
+        "A set of alternative volume addresses for a single volume that are used in the parallel access volume (PAV) function."
+    ],
+    "allegiance": [
+        "In mainframe computing, a relationship that is created between a device and one or more channel paths during the processing of certain conditions."
+    ],
+    "allocated storage": [
+        "The space that is allocated to volumes but is not yet assigned. See also assigned storage."
+    ],
+    "american national standards institute (ansi)": [
+        "A private, nonprofit organization whose membership includes private companies, U.S. government agencies, and professional, technical, trade, labor, and consumer organizations. ANSI coordinates the development of voluntary consensus standards in the U.S."
+    ],
+    "american standard code for information interchange (ascii)": [
+        "A standard code used for information exchange among data processing systems, data communication systems, and associated equipment. ASCII uses a coded character set consisting of 7-bit coded characters. See also Extended Binary Coded Decimal Interchange Code."
+    ],
+    "anonymous host": [
+        "See pseudohost."
+    ],
+    "ansi": [
+        "See American National Standards Institute."
+    ],
+    "ansi control character": [
+        "A control character as defined by the FORTRAN standards of American National Standards Institute (ANSI) and International Organization for Standardization (ISO). It appears at the beginning of each record."
+    ],
+    "apar": [
+        "See authorized program analysis report."
+    ],
+    "application key": [
+        "See license key."
+    ],
+    "arbitrated loop": [
+        "For fibre-channel connections, a topology that enables the interconnection of a set of nodes."
+    ],
+    "array": [
+        "An ordered collection, or group, of physical devices (disk drive modules) that are used to define logical volumes or devices. An array is a group of drives designated to be managed with a Redundant Array of Independent Disks (RAID)."
+    ],
+    "ascii": [
+        "See American Standard Code for Information Interchange."
+    ],
+    "assigned storage": [
+        "The space allocated to a volume and assigned to a port. See also allocated storage."
+    ],
+    "asynchronous replication": [
+        "A type of replication in which control is given back to the application as soon as the write operation is made to the source volume. Some time later, the write operation is made to the target volume. See also synchronous replication."
+    ],
+    "audit log": [
+        "An unalterable record of all commands or user interactions that are issued to the system."
+    ],
+    "authenticated user": [
+        "A user who has logged in to the system with a valid account (user ID and password)."
+    ],
+    "authentication": [
+        "The mechanism by which a system determines what permissions a particular authenticated user has to access specific resources or actions. See also authorization."
+    ],
+    "authorization": [
+        "The mechanism by which a system determines what permissions a particular authenticated user has to access specific resources or actions. See also authentication."
+    ],
+    "authorization code": [
+        "An alphanumeric code generated for administrative functions, such as password resets or two-factor authentication bypass."
+    ],
+    "authorized program analysis report (apar)": [
+        "A request for correction of a defect in a supported release of a program supplied by IBM."
+    ],
+    "availability": [
+        "The delivery of reliable service during scheduled periods."
+    ],
+    "backup copy services server": [
+        "One of two Copy Services servers in a Copy Services domain. The other Copy Services server is the primary Copy Services server. The backup Copy Services server is available to become the active Copy Services server if the primary Copy Services server fails. See also Copy Services client, Copy Services server, Copy Services server group, primary Copy Services server."
+    ],
+    "bay": [
+        "A physical space into which a device can be physically mounted and connected to power and data.", "For example, a power supply or a disk drive might be inserted into a bay."
+    ],
+    "binary digit (bit)": [
+        "The smallest unit of computer information. A bit has a value of 1 or 0."
+    ],
+    "bit": [
+        "See binary digit."
+    ],
+    "block": [
+        "A unit of data storage on a device.", "To suspend a program process."
+    ],
+    "block storage": [
+        "A unit of data storage on a device."
+    ],
+    "boot": [
+        "To load an operating system or start the system."
+    ],
+    "ca": [
+        "See certificate authority."
+    ],
+    "cache": [
+        "Storage or memory that is used to improve access times to instructions, data, or both. For example, data that resides in cache memory is normally a copy of data that resides elsewhere in slower, less expensive storage, such as on a disk or on another network node."
+    ],
+    "cache eviction": [
+        "A process by which data associated with a file is removed from the cache system. The data is removed either by using a Least Recently Used (LRU) algorithm when configured General Parallel File System (GPFS) hard or soft quota limits are exceeded or by issuing a command. When referenced again in the cache system, the data that is associated with the file is retrieved from the home system."
+    ],
+    "cache hit": [
+        "An event that satisfies a read operation by retrieving data from cache instead of retrieving it from the intended storage or a lower level of cache. See also cache miss."
+    ],
+    "cache miss": [
+        "An event that satisfies a read operation by retrieving data from the intended storage or a lower level of cache because the requested data is not available in the only level or a higher level of cache. See also cache hit."
+    ],
+    "caching i/o group": [
+        "The I/O group in the system that performs the cache function for a volume."
+    ],
+    "call home": [
+        "A communication link established between a product and a service provider. The product can use this link to place a call to a service provider when it requires service. With access to the machine, service personnel can perform service tasks, such as viewing error and problem logs or initiating trace and dump retrievals."
+    ],
+    "capacity recycling": [
+        "The amount of provisioned capacity that can be recovered without causing stress or performance degradation. This capacity identifies the amount of resources that can be reclaimed and provisioned to other objects in an environment."
+    ],
+    "capacity threshold": [
+        "The percent of total usable physical capacity that used capacity must exceed before a notification is sent. See also total usable physical capacity."
+    ],
+    "cascade": [
+        "To connect in a series or in a succession of stages so that each stage derives from or acts upon the product of the preceding stage. For instance, network controllers might be cascaded in a succession of levels in order to concentrate many more lines than a single level permits."
+    ],
+    "catcher": [
+        "A server that service personnel use to collect and retain status data that storage systems send to it."
+    ],
+    "ccr": [
+        "See channel command retry."
+    ],
+    "ccw": [
+        "See channel command word."
+    ],
+    "cd": [
+        "See compact disc."
+    ],
+    "cd-rom": [
+        "See compact-disc read-only memory."
+    ],
+    "central processor node": [
+        "A physical collection of hardware that consists of main storage, one or more central processors, timers, and channels."
+    ],
+    "certificate": [
+        "A digital document that binds a public key to the identity of the certificate owner, thereby enabling the certificate owner to be authenticated. A certificate is issued by a certificate authority and is digitally signed by that authority. See also certificate authority."
+    ],
+    "certificate authority (ca)": [
+        "A trusted third-party organization or company that issues the digital certificates. The certificate authority typically verifies the identity of the individuals who are granted the unique certificate. See also certificate."
+    ],
+    "change volume": [
+        "A volume that is used in Global Mirror that holds earlier consistent revisions of data when changes are made."
+    ],
+    "channel": [
+        "In mainframe computing, the part of a channel subsystem that manages a single I/O interface between a channel subsystem and a set of control units."
+    ],
+    "channel command retry (ccr)": [
+        "In mainframe computing, the protocol used between a channel and a control unit that enables the control unit to request that the channel reissue the current command."
+    ],
+    "channel command word (ccw)": [
+        "In zSeries systems, an 8-byte command issued to the channel subsystem by a central processor and operating asynchronously with the issuing processor."
+    ],
+    "channel path": [
+        "In mainframe computing, the interconnection between a channel and its associated control units."
+    ],
+    "channel subsystem (css)": [
+        "A collection of subchannels that directs the flow of information between I/O devices and main storage, relieves the processor of communication tasks, and performs path management functions."
+    ],
+    "channel-subsystem image": [
+        "In mainframe computing, the logical functions that a system requires to perform the function of a channel subsystem. With ESCON multiple image facility (EMIF), one channel-subsystem image exists in the channel subsystem for each logical partition (LPAR). Each image appears to be an independent channel-subsystem program, but all images share a common set of hardware facilities."
+    ],
+    "child pool": [
+        "A user-defined capacity that is formed from capacity that is defined either in another pool or a system. See also parent pool."
+    ],
+    "cifs": [
+        "See Common Internet File System."
+    ],
+    "ckd": [
+        "See count key data."
+    ],
+    "ckd record": [
+        "See count-key-data record."
+    ],
+    "cli": [
+        "See command-line interface."
+    ],
+    "client": [
+        "A software program or computer that requests services from a server. See also host and  server ."
+    ],
+    "cloud account": [
+        "An agreement with a cloud service provider to use storage or other services at that service provider. Access to the cloud account is granted by presenting valid credentials."
+    ],
+    "cluster": [
+        "A group of computers and other resources that operate together as a single system."
+    ],
+    "command-line interface (cli)": [
+        "A computer interface in which the input and output are text based."
+    ],
+    "common internet file system (cifs)": [
+        "A protocol that manages shared, remote file access for applications to files, printers, serial ports, and so on over a TCP/IP network."
+    ],
+    "common platform storage subsystems": [
+        "A strategy and family of storage products based on common hardware parts."
+    ],
+    "compact disc (cd)": [
+        "An optical disc that stores digital data."
+    ],
+    "compact-disc read-only memory (cd-rom)": [
+        "High-capacity read-only memory in the form of an optically read compact disc."
+    ],
+    "compression": [
+        "A function that removes repetitive characters, spaces, strings of characters, or binary data from the data being processed and replaces characters with control characters. Compression reduces the amount of storage space that is required for data."
+    ],
+    "compute node": [
+        "An independent machine that contains one or more microprocessors, memory, storage, and network controllers and runs its own operating system and applications."
+    ],
+    "concurrent copy": [
+        "A function that increases the accessibility of data by creating a consistent copy of the data concurrent with regular processing.", "A function of the DFSMSdss component that is used to back up any collection of data at a point in time with minimum down time for the database or application that uses the collection of data."
+    ],
+    "concurrent installation of licensed internal code": [
+        "The process of installing Licensed Internal Code in a device while the device is in use."
+    ],
+    "concurrent maintenance": [
+        "Service or maintenance that is performed on a hardware unit in the system while the system is fully or partially operational."
+    ],
+    "concurrent media maintenance": [
+        "Service performed on a disk drive module (DDM) without losing access to the data."
+    ],
+    "configure": [
+        "In storage, to define the logical and physical configuration of the I/O subsystem through the user interface that the storage facility provides for this function."
+    ],
+    "consistent copy": [
+        "A copy of a data entity (a logical volume {LVOL}), for example) that contains the contents of the entire data entity at an instant in time."
+    ],
+    "console": [
+        "A user interface to a server, such as can be provided by a personal computer."
+    ],
+    "contingent allegiance": [
+        "In mainframe computing, a relationship that is created in a control unit between a device and a channel when the channel accepts unit-check status. Contingent allegiance causes the control unit to guarantee access; that is, the control unit does not present the busy status to the device. It also enables the channel to retrieve sense data that is associated with the unit-check status on the channel path associated with the allegiance. See also implicit allegiance, reserved allegiance."
+    ],
+    "control character": [
+        "A character whose occurrence in a particular context initiates, modifies, or stops a control function."
+    ],
+    "control unit (cu)": [
+        "A device that coordinates and controls the operation of one or more input/output devices, and synchronizes the operation of such devices with the operation of the system as a whole."
+    ],
+    "control-unit image": [
+        "In mainframe computing, a logical subsystem that is accessed through an ESCON or FICON I/O interface. One or more control-unit images exist in each control unit. Each image appears as an independent control unit, but all control-unit images share a common set of hardware facilities."
+    ],
+    "copyback": [
+        "A process that moves data back to its expected or preferred location to maintain an array in a more efficient configuration after a failed drive is replaced."
+    ],
+    "copy services cli": [
+        "See Copy Services command-line interface."
+    ],
+    "copy services domain": [
+        "See Copy Services server group."
+    ],
+    "copy services server": [
+        "An ESS cluster (or, optionally, in an external cluster) designated by the copy services administrator to perform the ESS Copy Services functions. See also backup Copy Services server, primary Copy Services server."
+    ],
+    "copy services server group": [
+        "A collection of user-designated ESS clusters participating in Copy Services functions managed by a designated, active, Copy Services server. See also backup Copy Services server, primary Copy Services server."
+    ],
+    "count field": [
+        "The first field of a count-key-data (CKD) record. This field contains eight bytes: the first four bytes identify the track address, which includes the cylinder and head that are associated with the track; the fifth byte identifies the record on the track; the sixth byte identifies the length of the record's key field; the last two bytes identify the length of the record's data field."
+    ],
+    "count key data (ckd)": [
+        "A data recording format that uses self-defining record formats in which each record on a volume is represented by up to three fields: a count field identifying the record and specifying its format, an optional key field that can be used to identify the data area contents, and an optional data field that typically contains the user data. See also data record, storage architecture type.", "An ESA/390 architecture for a direct access storage device (DASD) logical device that specifies the format of and access mechanisms for the logical data units on the device. The logical data unit is a track that can contain one or more records, each consisting of a count field, an optional key field, and an optional data field. See also custom volume.", "An architecture for a direct access storage device (DASD) device or logical device that specifies the access mechanisms for the logical data units on the device through a specific set of supported channel commands. Extensions to the CKD command set form the basis of Extended CKD."
+    ],
+    "count-key-data record (ckd record)": [
+        "See data record."
+    ],
+    "count-key-data storage": [
+        "See S/390 storage."
+    ],
+    "cpc": [
+        "See central processor node."
+    ],
+    "crc": [
+        "See cyclic redundancy check."
+    ],
+    "cru": [
+        "See customer-replaceable unit."
+    ],
+    "css": [
+        "See channel subsystem."
+    ],
+    "cu": [
+        "See control unit."
+    ],
+    "cuir": [
+        "See control-unit initiated reconfiguration."
+    ],
+    "customer console": [
+        "A user interface to a server."
+    ],
+    "customer-replaceable unit (cru)": [
+        "An assembly or part that can be replaced in its entirety by a user when any one of its components fails."
+    ],
+    "custom volume": [
+        "A volume in count-key-data (CKD) format that is not a standard volume, which means that it does not necessarily present the same number of cylinders and capacity to its assigned logical control unit as provided by one of the standard S/390 volume types. See also count key data, interleave, standard volume."
+    ],
+    "cyclic redundancy check (crc)": [
+        "A redundancy check in which the check key is generated by a cyclic algorithm"
+    ],
+    "cylinder": [
+        "A unit of storage on a count-key-data (CKD) device with a fixed number of tracks."
+    ],
+    "da": [
+        "See device adapter."
+    ],
+    "daisy chain": [
+        "See serial connection."
+    ],
+    "dasd": [
+        "See direct access storage device."
+    ],
+    "dasd fast write (dfw)": [
+        "A function in which data is written concurrently to cache and nonvolatile storage, and automatically scheduled for destaging to DASD. Both copies are retained in the storage control until the data is completely written to the DASD, providing data integrity equivalent to writing directly to the DASD. Use of DASD fast write for system-managed data sets is controlled by storage class attributes to improve performance."
+    ],
+    "data availability": [
+        "The degree to which data is available when needed, typically measured as a percentage of time that the system would be capable of responding to any data request (for example, 99.999% available)."
+    ],
+    "data consistency": [
+        "A characteristic of the data at the target site where dependent write order is maintained to guarantee the recoverability of applications."
+    ],
+    "data facility storage management subsystem (dfsms)": [
+        "An operating environment that helps automate and centralize the management of storage. To manage storage, the storage management subsystem (SMS) provides the storage administrator with control over data class, storage class, management class, storage group, and automatic class selection (ACS) routine definitions."
+    ],
+    "data field": [
+        "The optional third field of a count-key-data (CKD) record. The data field contains data that the program writes. The count field specifies the length of the data field."
+    ],
+    "data record": [
+        "A basic unit of data recording format. See also count key data, fixed-block architecture, track."
+    ],
+    "data sharing": [
+        "The ability of subsystems or application programs to access data directly and to change it while maintaining data integrity."
+    ],
+    "ddm": [
+        "See disk drive module."
+    ],
+    "dedicated storage": [
+        "Storage within a storage facility that is configured such that a single host system has exclusive access to the storage."
+    ],
+    "demote": [
+        "To remove a logical data unit from cache memory. A storage server demotes a data unit to create space for other logical data units in the cache or because the logical data unit is not valid. The ESS must destage logical data units with active write units before they can be demoted."
+    ],
+    "destage": [
+        "To move data from cache to a nonvolatile storage medium."
+    ],
+    "device": [
+        "A piece of equipment such as a workstation, printer, disk drive, tape unit, or remote system."
+    ],
+    "device adapter (da)": [
+        "A physical component of the ESS that provides communication between the clusters and the storage devices. Multiple DAs are connected to the clusters in such a way that any cluster can access storage device via multiple paths, providing fault tolerance and enhanced availability. See also loop, SSA adapter."
+    ],
+    "device address": [
+        "A unique identifier for each device so it is recognized by the system."
+    ],
+    "device identifier": [
+        "An identifier that uniquely identifies a logical or physical device."
+    ],
+    "device interface card": [
+        "A physical subunit of a storage cluster that provides the communication with the attached disk drive modules (DDMs)."
+    ],
+    "device number": [
+        "The reference number assigned to any device."
+    ],
+    "device sparing": [
+        "A subsystem function that automatically copies data from a failing disk drive module (DDM) to a spare DDM. The subsystem maintains data access during the process."
+    ],
+    "dfs": [
+        "See Distributed File Service."
+    ],
+    "dfsms": [
+        "See Data Facility Storage Management Subsystem."
+    ],
+    "dfw": [
+        "See DASD fast write."
+    ],
+    "direct access storage device (dasd)": [
+        "A device that allows storage to be directly accessed, such as a disk drive."
+    ],
+    "disk 16 pack": [
+        "A group of 16 disk drive modules (DDMs) installed as a unit in a DDM bay. A disk 16 pack is sometimes referred to as a DDM bay."
+    ],
+    "disk cage": [
+        "A container for disk drives."
+    ],
+    "disk drive": [
+        "The mechanism used to read and write information on a disk."
+    ],
+    "disk drive module (ddm)": [
+        "A field-replaceable unit (FRU) that consists of a single disk drive and its associated packaging."
+    ],
+    "disk drive module group": [
+        "See disk 16 pack."
+    ],
+    "disk eight pack": [
+        "A group of eight disk drive modules (DDMs) installed as a unit in a chassis. A disk eight pack is sometimes referred to as a DDM bay."
+    ],
+    "disk group": [
+        "A collection of disk drives in the same loop configured by the ESS to be available for assignment as a Redundant Array of Independent Disks (RAID). A disk group can be formatted as count key data (CKD) or fixed block, formatted as RAID, or left unformatted. A disk group is a logical assemblage of multiple disk drives, in contrast to a disk eight pack or disk 16 pack."
+    ],
+    "distributed file service (dfs)": [
+        "A service that provides data access over IP networks."
+    ],
+    "distributed raid": [
+        "An alternative RAID scheme where the number of drives that are used to store the array can be greater than the equivalent, typical RAID scheme. The same data stripes are distributed across a greater number of drives, which increases the opportunity for parallel I/O and hence improves overall array performance. See also rebuild area."
+    ],
+    "dns": [
+        "See Domain Name System."
+    ],
+    "domain": [
+        "A logical grouping of resources in a network for the purpose of common management and administration."
+    ],
+    "domain name system (dns)": [
+        "The distributed database system that maps domain names to IP addresses."
+    ],
+    "dotted decimal notation": [
+        "The syntactical representation for a 32-bit integer that consists of four 8-bit numbers written in base 10 and separated by dots. IP addresses are represented in dotted decimal notation. See also octet."
+    ],
+    "drawer": [
+        "A storage enclosure that contains multiple disk drive modules (DDMs) and provides power, cooling, and related interconnection logic to make the DDMs accessible to attached host systems."
+    ],
+    "drive": [
+        "A data storage device. A drive can be either a magnetic disk drive or a solid-state drive (SSD).", "The mechanism used to seek, read, and write information on a storage medium."
+    ],
+    "drive class": [
+        "A combination of drive technology and speed, which uniquely defines a class of drives that have approximately the same performance characteristics."
+    ],
+    "drive technology": [
+        "A category of a drive that pertains to the method and reliability of the data storage techniques being used on the drive. Possible values include enterprise (ENT) drive, nearline (NL) drive, or solid-state drive (SSD)."
+    ],
+    "duplex": [
+        "In ESS Copy Services, the state of a volume pair after Peer-to-Peer Remote Copy (PPRC) has completed the copy operation and the volume pair is synchronized.", "Pertaining to communication in which data can be sent and received at the same time."
+    ],
+    "dynamic sparing": [
+        "The ability of a storage server to move data from a failing disk drive module (DDM) to a spare DDM while maintaining storage functions."
+    ],
+    "ebcdic": [
+        "See Extended Binary Coded Decimal Interchange Code."
+    ],
+    "ec": [
+        "See engineering change."
+    ],
+    "ecc": [
+        "See error correction code."
+    ],
+    "eckd": [
+        "See extended count key data."
+    ],
+    "electrostatic discharge": [
+        "An undesirable discharge of static electricity that can damage equipment and degrade electrical circuitry."
+    ],
+    "emergency power off (epo)": [
+        "A means of turning off power during an emergency, referring usually to a switch."
+    ],
+    "emif": [
+        "See ESCON multiple image facility."
+    ],
+    "enclosure": [
+        "A unit that houses the components of a storage subsystem, such as a control unit, disk drives, and power source.", "The metal structure in which various electronic components are mounted."
+    ],
+    "encryption deadlock": [
+        "The inability to access encryption keys to decrypt data. See also encryption recovery key."
+    ],
+    "encryption key label": [
+        "The list of encryption key labels used by the storage system to identify keys that will be used on the key server."
+    ],
+    "encryption key manager": [
+        "See encryption key server."
+    ],
+    "encryption key server": [
+        "An internal or external system that runs a key manager that receives and then serves existing encryption keys or certificates to a storage system."
+    ],
+    "encryption recovery key": [
+        "An encryption key that allows a method to recover from an encryption deadlock situation where the normal encryption key servers are not available. See also encryption deadlock."
+    ],
+    "end-of-file (eof)": [
+        "On a data medium, a coded character indicating the end of the medium."
+    ],
+    "engineering change (ec)": [
+        "An update to a machine, part, or program. Each EC for a given unit is assigned a unique number referred to as an EC level or EC number."
+    ],
+    "enterprise": [
+        "Pertaining to a type of data storage device that has higher error recovery limits, vibration tolerance, and end-to-end error detection than standard desktop hard drives."
+    ],
+    "enterprise systems connection (escon)": [
+        "A peripheral interface for an Enterprise Systems Architecture/390 and zSeries computer. The I/O interface uses ESA/390 logical protocols over a serial interface that configures attached units to a communication fabric."
+    ],
+    "eof": [
+        "See end-of-file."
+    ],
+    "epo": [
+        "See emergency power off."
+    ],
+    "eprom": [
+        "See erasable programmable read-only memory."
+    ],
+    "erasable programmable read-only memory (eprom)": [
+        "A type of memory chip that can retain its contents without electricity. Unlike the programmable read-only memory (PROM), which can be programmed only once, the EPROM can be erased by ultraviolet light and then reprogrammed."
+    ],
+    "erds": [
+        "See error-recording data set."
+    ],
+    "erp": [
+        "See error recovery procedure."
+    ],
+    "error correction code (ecc)": [
+        "A code appended to a data block that has the capability to detect and correct multiple bit errors within the block."
+    ],
+    "error-recording data set (erds)": [
+        "On S/390 and zSeries hosts, a data set that records data-storage and data-retrieval errors. A service information message (SIM) provides the error information for the ERDS."
+    ],
+    "error recovery procedure (erp)": [
+        "A procedure designed to help isolate and, where possible, to recover from errors in equipment.", "The procedure is often used in conjunction with programs that record information on machine malfunctions."
+    ],
+    "esc": [
+        "See exception symptom code."
+    ],
+    "escd": [
+        "See ESCON Director."
+    ],
+    "escon": [
+        "See Enterprise Systems Connection."
+    ],
+    "escon channel": [
+        "An S/390 or zSeries channel that supports ESCON protocols."
+    ],
+    "escon director (escd)": [
+        "A class of devices that connect channels and control units only for the duration of an input/output (I/O) operation."
+    ],
+    "escon host system": [
+        "An zSeries host that attaches to the storage system with an ESCON adapter. ESCON host systems run on operating systems that include MVS, Virtual Storage Extended (VSE), transaction processing facility (TPF), or versions of VM."
+    ],
+    "escon multiple image facility (emif)": [
+        "In mainframe computing, a function that enables logical partitions (LPARs) to share an ESCON channel path by providing each LPAR with its own channel-subsystem image."
+    ],
+    "copy services": [
+        "A collection of optional software features, with a web-browser interface, used for configuring, managing, and monitoring data-copy functions."
+    ],
+    "exception symptom code (esc)": [
+        "A 2-byte error code that describes an exception in terms of class, type, and symptom."
+    ],
+    "extended binary coded decimal interchange code (ebcdic)": [
+        "A coded character set of 256 8-bit characters developed for the representation of textual data.", "See also American Standard Code for Information Interchange."
+    ],
+    "extended count key data (eckd)": [
+        "An extension of the count-key-data (CKD) architecture. It includes additional commands that can be used to improve performance."
+    ],
+    "extended remote copy (xrc)": [
+        "See Global Mirror."
+    ],
+    "extent": [
+        "A continuous space on a disk, direct-access storage volume, or diskette that is occupied by or reserved for a particular data set, data space, or file."
+    ],
+    "extent type": [
+        "See storage architecture type."
+    ],
+    "fabric": [
+        "A complex network of hubs, switches, adapter endpoints, and connecting cables that support a communication protocol between devices. For example, Fibre Channel uses a fabric to connect devices."
+    ],
+    "failback": [
+        "The restoration of an appliance to its initial configuration after detection and repair of a failed network or component."
+    ],
+    "failover": [
+        "An automatic operation that switches to a redundant or standby system or node in the event of a software, hardware, or network interruption."
+    ],
+    "fast write": [
+        "A write operation at cache speed that does not require immediate transfer of data to a disk drive. The subsystem writes the data directly to cache, to nonvolatile storage, or to both. The data is then available for destaging. A fast-write operation reduces the time an application must wait for the I/O operation to complete."
+    ],
+    "fb": [
+        "See fixed block."
+    ],
+    "fba": [
+        "See fixed-block architecture."
+    ],
+    "fc": [
+        "See feature code.", "See Fibre Channel."
+    ],
+    "fc-al": [
+        "See Fibre Channel Arbitrated Loop."
+    ],
+    "fcip": [
+        "See Fibre Channel over IP."
+    ],
+    "fcp": [
+        "See Fibre Channel Protocol."
+    ],
+    "feature activation code": [
+        "See license key."
+    ],
+    "feature code (fc)": [
+        "A code used by IBM to process hardware and software orders."
+    ],
+    "fibre channel (fc)": [
+        "A technology for transmitting data between computer devices. It is especially suited for attaching computer servers to shared storage devices and for interconnecting storage controllers and drives. See also zoning."
+    ],
+    "fibre channel arbitrated loop (fc-al)": [
+        "An implementation of the Fibre Channel standards that uses a ring topology for the communication fabric; refer to American National Standards Institute (ANSI) INCITS 272-1996, (R2001). In this topology, two or more Fibre Channel end points are interconnected through a looped interface."
+    ],
+    "fibre channel connection (ficon)": [
+        "A Fibre Channel communication protocol designed for IBM mainframe computers and peripherals."
+    ],
+    "fibre channel extender": [
+        "A device used to extend a Fibre Channel link over a greater distance than is supported by the standard, usually a number of miles or kilometers. Devices must be deployed in pairs at each end of a link."
+    ],
+    "fibre channel over ip (fcip)": [
+        "A network storage technology that combines the features of the Fibre Channel Protocol and the Internet Protocol (IP) to connect distributed SANs over large distances."
+    ],
+    "fibre channel protocol (fcp)": [
+        "The serial SCSI command protocol used on Fibre Channel networks. See also open system."
+    ],
+    "ficon": [
+        "See Fibre Channel connection."
+    ],
+    "field-replaceable unit (fru)": [
+        "An assembly that is replaced in its entirety when any one of its components fails."
+    ],
+    "fifo": [
+        "See first-in first-out."
+    ],
+    "file module": [
+        "A component that provides file systems to network users. A file module must be provided with storage for the file systems."
+    ],
+    "file system (fs)": [
+        "A collection of files and certain attributes associated with those files."
+    ],
+    "file system storage": [
+        "Data storage that is organized into files and directories."
+    ],
+    "file transfer protocol (ftp)": [
+        "In TCP/IP, an application layer protocol that uses TCP and Telnet services to transfer bulk-data files between machines or hosts."
+    ],
+    "firewall": [
+        "A network configuration, typically both hardware and software, that prevents unauthorized traffic into and out of a secure network."
+    ],
+    "firmware": [
+        "Proprietary code that is usually delivered as microcode as part of an operating system."
+    ],
+    "first-in first-out (fifo)": [
+        "A queuing technique in which the next item to be retrieved is the item that has been in the queue for the longest time. See also last-in first-out."
+    ],
+    "fixed block (fb)": [
+        "See fixed-block architecture."
+    ],
+    "fixed-block architecture (fba)": [
+        "An architecture for a virtual device that specifies the format of and access mechanisms for the virtual data units on the device. The virtual data unit is a block. All blocks on the device are the same size (fixed size). The system can access them independently. See also data record, storage architecture type."
+    ],
+    "flashcopy": [
+        "An optional feature of the Storage System DS family that can make an instant copy of data, that is, a point-in-time copy of a volume.", "Pertaining to a point-in-time copy where a virtual copy of a volume is created. The target volume maintains the contents of the volume at the point in time when the copy was established. Any subsequent write operations to the source volume are not reflected on the target volume."
+    ],
+    "flash drive": [
+        "A data storage device, which is typically removable and rewritable, that uses solid-state memory to store persistent data. See also flash drive."
+    ],
+    "flash module": [
+        "A modular hardware unit containing flash memory, one or more flash controllers, and associated electronics."
+    ],
+    "flush-through mode": [
+        "See write-through mode."
+    ],
+    "form factor": [
+        "The industry-standard physical dimensions of a storage system drive enclosure.\u00a0Possible values include \u201c3.5 inch\u201d, \u201c2.5 inch\u201d, and \u201c1.8 inch.\u201d"
+    ],
+    "frame": [
+        "The hardware support structure, covers, and all electrical parts mounted therein that are packaged as one entity for shipping."
+    ],
+    "fru": [
+        "See field-replaceable unit."
+    ],
+    "fs": [
+        "See file system."
+    ],
+    "ftp": [
+        "See File Transfer Protocol."
+    ],
+    "full restore operation": [
+        "A copy operation where a local volume is created by reading an entire a volume snapshot from cloud storage."
+    ],
+    "full snapshot": [
+        "A type of volume snapshot that contains all the volume data. When a\u00a0full\u00a0snapshot is created, an entire copy of the volume data is transmitted to the cloud."
+    ],
+    "fuzzy copy": [
+        "A backup version or archive copy of a file that might not accurately reflect the original contents of the file because it was backed up or archived the file while the file was being modified."
+    ],
+    "gb": [
+        "See gigabyte."
+    ],
+    "gdps": [
+        "See Geographically Dispersed Parallel Sysplex."
+    ],
+    "general parallel file system (gpfs)": [
+        "A high-performance shared-disk file system that can provide data access from nodes in a clustered system environment."
+    ],
+    "geographically dispersed parallel sysplex (gdps)": [
+        "An application that integrates Parallel Sysplex technology and remote copy technology to enhance application availability and improve disaster recovery. GDPS topology is a Parallel Sysplex cluster spread across two sites, with all critical data mirrored between the sites. GDPS manages the remote copy configuration and storage subsystems; automates Parallel Sysplex operational tasks; and automates failure recovery from a single point of control."
+    ],
+    "gigabyte (gb)": [
+        "For processor storage, real and virtual storage, and channel volume, two to the power of 30 or 1,073,741,824 bytes. For disk storage capacity and communications volume, 1,000,000,000 bytes."
+    ],
+    "global copy": [
+        "A non-synchronous long-distance copy option for data migration and backup. See also Global Mirror."
+    ],
+    "global mirror": [
+        "A method of an asynchronous replication that maintains data consistency across multiple volumes within or across multiple systems. Global Mirror is generally used where distances between the source site and target site cause increased latency beyond what the application can accept.", "An optional capability of the remote mirror and copy feature that provides a two-site extended-distance remote copy. Data that is written by the host to the storage unit at the local site is automatically maintained at the remote site. See also Global Copy."
+    ],
+    "gpfs": [
+        "See General Parallel File System."
+    ],
+    "hard disk drive (hdd)": [
+        "A stand-alone disk drive that reads and writes data on rigid disks and can be attached to a port on the system unit."
+    ],
+    "hardware management console (hmc)": [
+        "A system that controls managed systems, including the management of logical partitions and use of Capacity Upgrade on Demand. Using service applications, the HMC communicates with managed systems to detect and consolidate information, which can then be sent for analysis."
+    ],
+    "hardware service manager (hsm)": [
+        "A tool for displaying and working with system hardware from both a logical and a packaging viewpoint, for debugging input/output processors (IOPs) and devices, and for fixing failing and missing hardware."
+    ],
+    "hdd": [
+        "See hard disk drive."
+    ],
+    "hdisk": [
+        "In AIX, a logical unit number (LUN) on an array."
+    ],
+    "head and disk assembly": [
+        "The portion of a hard disk drive (HDD) associated with the medium and the read/write head."
+    ],
+    "heartbeat": [
+        "A signal that one entity sends to another to convey that it is still active. See also heartbeat call-home record."
+    ],
+    "heartbeat call-home record": [
+        "Machine operating and service information sent to a service machine. These records might include such information as feature code information and the logical-configuration information for a product. See also heartbeat."
+    ],
+    "hierarchical storage management (hsm)": [
+        "A function that automatically distributes and manages data on disk, tape, or both by regarding devices of these types and potentially others as levels in a storage hierarchy that range from fast, expensive devices to slower, cheaper, and possibly removable devices. The objectives are to minimize access time to data and maximize available media capacity."
+    ],
+    "high-speed link (hsl)": [
+        "A hardware connectivity architecture that links system processors to system I/O buses and other systems."
+    ],
+    "hmc": [
+        "See Hardware Management Console."
+    ],
+    "home address": [
+        "A field at the beginning of a track that contains information that identifies the physical track and its association with a cylinder. See also track."
+    ],
+    "hop": [
+        "One segment of a transmission path between adjacent nodes in a routed network."
+    ],
+    "host": [
+        "A physical or virtual computer system that hosts computer applications, with the host and the applications using storage. See also client  and  server."
+    ],
+    "host adapter": [
+        "A physical subunit of a storage server that provides the ability to attach to one or more host I/O interfaces."
+    ],
+    "host bay": [
+        "The physical space used for installing host adapters. The ESS has multiple host bays, with an equal number of bays assigned to each cluster."
+    ],
+    "host cluster": [
+        "A configured set of physical or virtual hosts that share one or more storage volumes in order to increase scalability or availability of computer applications."
+    ],
+    "host interface card": [
+        "See interface card."
+    ],
+    "host name": [
+        "In Internet communication, the name given to a computer. The host name might be a fully qualified domain name such as mycomputer.city.company.com, or it might be a specific subname such as mycomputer."
+    ],
+    "host object": [
+        "A logical representation of a host within a storage system that is used to represent the host for configuration tasks."
+    ],
+    "host processor": [
+        "A processor that controls a user application network."
+    ],
+    "host system": [
+        "A computer, either mainframe (S/390 or zSeries) or open-system, that is connected to the ESS.", "S/390 or zSeries hosts are connected to the ESS through ESCON or FICON interfaces. Open-systems hosts are connected to the ESS by the Small Computer System Interface (SCSI) or the Fibre Channel interface."
+    ],
+    "hot plug": [
+        "To install a hardware component without turning off the system."
+    ],
+    "hot-spare": [
+        "Pertaining to redundant hardware (such as an adapter, a disk, a drive, or a server) that is installed and available in the event of a hardware failure."
+    ],
+    "hsl": [
+        "See high-speed link."
+    ],
+    "hsm": [
+        "See hierarchical storage management.", "See hardware service manager."
+    ],
+    "hyperswap": [
+        "Pertaining to a function that provides continuous, transparent availability against storage errors and site failures, and is based on synchronous replication."
+    ],
+    "ibm z": [
+        "The IBM family of products which includes the new IBM z14\u2122(z14), IBM z13s\u2122 (z13s), and the IBM z13\u00ae (z13). IBM Z\u00ae includes older Z family members like the IBM zEnterprise\u00ae EC12 (zEC12), IBM zEnterprise\u00ae BC12 (zBC12) and even the IBM eServer\u2122 zSeries\u00ae 900 (z900). The new z14 supports all traditional operating systems such as z/OS\u00ae, z/VM\u00ae, z/VSE\u00ae, z/TPF, and Linux\u00ae on IBM z Systems\u00ae."
+    ],
+    "ibm product engineering (pe)": [
+        "The third-level of IBM service support. Product engineering is composed of IBM engineers who have experience in supporting a product or who are knowledgeable about the product."
+    ],
+    "iml": [
+        "See initial microcode load."
+    ],
+    "implicit allegiance": [
+        "In mainframe computing, a relationship that a control unit creates between a device and a channel path when the device accepts a read or write operation. The control unit guarantees access to the channel program over the set of channel paths that it associates with the allegiance. See also contingent allegiance, reserved allegiance."
+    ],
+    "incremental restore operation": [
+        "A copy operation where a local volume is modified to match a volume snapshot by reading from cloud storage only the parts of the volume snapshot that differ from the local volume."
+    ],
+    "incremental snapshot": [
+        "A type of volume snapshot where the changes to a local volume relative to the volume's previous snapshot are stored on cloud storage."
+    ],
+    "initial microcode load (iml)": [
+        "The loading of microcode from a storage medium into memory."
+    ],
+    "initial program load (ipl)": [
+        "The process of loading the operating system and other basic software into main storage."
+    ],
+    "inode": [
+        "The internal structure that describes the individual files on AIX, UNIX, or Linux systems. An inode contains the node, type, owner, and location of a file."
+    ],
+    "input/output (i/o)": [
+        "Pertaining to a device, process, channel, or communication path involved in data input, data output, or both."
+    ],
+    "input/output adapter (i/o adapter, ioa)": [
+        "A circuit board containing logic and internal software that bridges an internal processor or memory interconnect scheme and an external, common, standard channel or link."
+    ],
+    "input/output configuration data set (iocds)": [
+        "A configuration definition built by the I/O configuration program (IOCP) and stored on disk files associated with the processor controller."
+    ],
+    "input/output configuration program (i/o configuration program, iocp)": [
+        "A program that defines to a system all the available I/O devices and channel paths."
+    ],
+    "input/output processor (i/o processor, iop)": [
+        "A processor dedicated to controlling channels or communication links."
+    ],
+    "interchange": [
+        "The sending and receiving of data in such a manner that the content of the data is not altered during transmission."
+    ],
+    "interface card": [
+        "An optional part of a node canister that provides the system with additional host and storage connectivity options."
+    ],
+    "interface node": [
+        "A node that connects a system to an Internet Protocol (IP) network for file-serving capabilities by using service protocols."
+    ],
+    "interim fix": [
+        "A certified fix that is generally available to all customers between regularly scheduled fix packs, refresh packs, or releases."
+    ],
+    "interleave": [
+        "To automatically create two striped partitions across the drives in a RAID-5 array, both of which use the count-key-data (CKD) record format. See also custom volume."
+    ],
+    "internet protocol (ip)": [
+        "A protocol that routes data through a network or interconnected networks. This protocol acts as an intermediary between the higher protocol layers and the physical network. See also Transmission Control Protocol."
+    ],
+    "internet small computer system interface (iscsi)": [
+        "An IP-based standard for linking data storage devices over a network and transferring data by carrying SCSI commands over IP networks. See also Small Computer System Interface."
+    ],
+    "intranet": [
+        "An organization's internal network that uses the IP protocol."
+    ],
+    "invalidate": [
+        "To remove a logical data unit from cache memory because it cannot support continued access to the logical data unit on the device. This removal might be the result of a failure within the storage server or a storage device that is associated with the device."
+    ],
+    "i/o": [
+        "See input/output."
+    ],
+    "ioa": [
+        "See input/output adapter."
+    ],
+    "i/o adapter": [
+        "See input/output adapter."
+    ],
+    "iocds": [
+        "See input/output configuration data set."
+    ],
+    "i/o configuration program": [
+        "See input/output configuration program."
+    ],
+    "iocp": [
+        "See input/output configuration program."
+    ],
+    "i/o device": [
+        "An addressable I/O unit, such as a direct access storage device (DASD), magnetic tape device, or printer."
+    ],
+    "i/o enclosure": [
+        "A hardware unit in a storage system where data is transferred into and out of the system."
+    ],
+    "i/o interface": [
+        "An interface that enables a host to perform read and write operations with its associated peripheral devices."
+    ],
+    "iop": [
+        "See input/output processor."
+    ],
+    "i/o priority queuing": [
+        "A facility that enables the system administrator to set priorities for queueing I/O signals from different system images. See also multiple allegiance, parallel access volume."
+    ],
+    "i/o processor": [
+        "See input/output processor."
+    ],
+    "i/o sequential response time": [
+        "The time that an I/O request is queued in processor memory waiting for previous I/O operations to the same volume to finish."
+    ],
+    "ip": [
+        "See Internet Protocol."
+    ],
+    "ipl": [
+        "See initial program load."
+    ],
+    "iscsi": [
+        "See Internet Small Computer System Interface."
+    ],
+    "java": [
+        "An object-oriented programming language for portable interpretive code that supports interaction among remote objects."
+    ],
+    "java virtual machine (jvm)": [
+        "A software implementation of a processor that runs compiled Java code (applets and applications)."
+    ],
+    "jvm": [
+        "See Java virtual machine."
+    ],
+    "kb": [
+        "See kilobyte."
+    ],
+    "key field": [
+        "The portion of a record that is used (possibly with other key fields) to locate a data record in a key file"
+    ],
+    "key server": [
+        "See encryption key server.", "A server that negotiates the values that determine the characteristics of a dynamic virtual private network (VPN) connection that is established between two endpoints."
+    ],
+    "kilobyte (kb)": [
+        "For processor storage, real and virtual storage, and channel volume, 2 to the power of 10 or 1,024 bytes. For disk storage capacity and communications volume, 1,000 bytes."
+    ],
+    "korn shell (ksh)": [
+        "An interactive command interpreter and a command programming language."
+    ],
+    "kpoh": [
+        "See thousands of power-on hours."
+    ],
+    "ksh": [
+        "See Korn shell."
+    ],
+    "lan": [
+        "See local area network."
+    ],
+    "last-in first-out (lifo)": [
+        "A queuing technique in which the next item to be retrieved is the item most recently placed on the queue. See also first-in first-out."
+    ],
+    "lba": [
+        "See logical block address."
+    ],
+    "lcu": [
+        "See logical control unit."
+    ],
+    "least recently used (lru)": [
+        "Pertaining to an algorithm used to identify and make available the cache space that contains the data that was least recently used."
+    ],
+    "led": [
+        "See light-emitting diode."
+    ],
+    "licensed capacity": [
+        "The amount of capacity on a storage system that a user is entitled to configure."
+    ],
+    "license key": [
+        "An alphanumeric code that activates a licensed function on a product."
+    ],
+    "license key file": [
+        "A file that contains one or more licensed keys."
+    ],
+    "lifo": [
+        "See last-in first-out."
+    ],
+    "light-emitting diode (led)": [
+        "A semiconductor chip that gives off visible or infrared light when activated."
+    ],
+    "link address": [
+        "An address assigned at initialization that identifies a channel or control unit and allows it to send and receive frames and perform I/O operations."
+    ],
+    "link-level facility": [
+        "The ESCON or FICON hardware and logical functions of a control unit or channel subsystem that allow communication over an ESCON or FICON read and write interface."
+    ],
+    "local area network (lan)": [
+        "A network that connects several devices in a limited area (such as a single building or campus) and that can be connected to a larger network."
+    ],
+    "local email": [
+        "An email configuration option for storage servers that are connected to a host-system network that does not have a domain name system (DNS) server."
+    ],
+    "logical address": [
+        "On an ESCON or FICON interface, the portion of a source or destination address in a frame used to select a specific channel subsystem or control-unit image."
+    ],
+    "logical block address (lba)": [
+        "The block number on a disk."
+    ],
+    "logical control unit (lcu)": [
+        "See control-unit image."
+    ],
+    "logical data unit": [
+        "A unit of storage that is accessible on a given device."
+    ],
+    "logical device": [
+        "The facilities of a logical subsystem with which a host communicates when performing I/O operations to a single addressable unit over an I/O interface. The same logical device may be accessible over more than one I/O interface."
+    ],
+    "logical partition (lp, lpar)": [
+        "One or more virtualized images of a hardware computing system that can include shared and dedicated resources assigned from the pool of resources available on a physical server. Each image appears to the operating system running within it to be a unique instance of a physical server. See also path group."
+    ],
+    "logical path": [
+        "In ESS Copy Services, a relationship between a source logical subsystem and target logical subsystem that is created over a physical path through the interconnection fabric used for Copy Services functions."
+    ],
+    "logical subsystem (lss)": [
+        "The logical functions of a storage controller with which one or more host I/O interfaces can access a set of devices. The controller groups the devices according to the addressing mechanisms of the associated I/O interfaces. One or more LSSs exist on a storage controller. In general, the controller associates a given set of devices with only one LSS."
+    ],
+    "logical unit (lu)": [
+        "In open systems, a logical disk drive."
+    ],
+    "logical unit number (lun)": [
+        "In the Small Computer System Interface (SCSI) standard, a unique identifier used to differentiate devices, each of which is a logical unit (LU)."
+    ],
+    "logical volume (lvol)": [
+        "The storage medium associated with a single logical unit (LU). An LVOL typically resides on one or more storage devices."
+    ],
+    "logical volume manager (lvm)": [
+        "A set of system commands, library routines, and other tools that allow the user to establish and control logical volume (LVOL) storage. The LVM maps data between the logical view of storage space and the physical disk drive module (DDM)."
+    ],
+    "longitudinal parity check": [
+        "See longitudinal redundancy check."
+    ],
+    "longitudinal redundancy check (lrc)": [
+        "A method of error-checking during data transfer that involves checking parity on a row of binary digits that are members of a set that form a matrix."
+    ],
+    "longwave laser adapter": [
+        "A connector used between a host and the ESS to support longwave Fibre Channel communication."
+    ],
+    "loop": [
+        "The physical connection between a pair of device adapters in the ESS. See also device adapter."
+    ],
+    "lp": [
+        "See logical partition."
+    ],
+    "lpar": [
+        "See logical partition."
+    ],
+    "lrc": [
+        "See longitudinal redundancy check."
+    ],
+    "lru": [
+        "See least recently used."
+    ],
+    "lss": [
+        "See logical subsystem."
+    ],
+    "lu": [
+        "See logical unit."
+    ],
+    "lun": [
+        "See logical unit number."
+    ],
+    "lvm": [
+        "See Logical Volume Manager."
+    ],
+    "lvol": [
+        "See logical volume."
+    ],
+    "machine level control (mlc)": [
+        "A database that contains the engineering change (EC) level and configuration of products in the field."
+    ],
+    "machine-reported product data (mrpd)": [
+        "Product data gathered by a machine and sent to a destination such as an IBM support server or RETAIN. This data includes information about the configuration and connections of this particular machine."
+    ],
+    "machine signature": [
+        "A string of characters that identifies a system. A machine signature might be required to obtain a license key."
+    ],
+    "mainframe": [
+        "A computer, usually in a computer center, with extensive capabilities and resources to which other computers may be connected so that they can share facilities."
+    ],
+    "maintenance analysis procedure (map)": [
+        "In hardware maintenance, a step-by-step procedure that assists an IBM service representative to trace a symptom to the cause of the failure."
+    ],
+    "management information base (mib)": [
+        "In the Simple Network Management Protocol (SNMP), a database of objects that can be queried or set by a network management system."
+    ],
+    "management node": [
+        "A node that is used for configuring, administering, and monitoring a system."
+    ],
+    "map": [
+        "See maintenance analysis procedure."
+    ],
+    "maximum replication delay": [
+        "The number of seconds that Metro Mirror or Global Mirror replication can delay a write operation to a volume."
+    ],
+    "mb": [
+        "See megabyte."
+    ],
+    "mca": [
+        "See Micro Channel architecture."
+    ],
+    "mean time between failures (mtbf)": [
+        "A number representing the hours between initial use and failure of an average unit in a specific population of units under specified conditions. MTBF is obtained by dividing the total number of failures into the total number of operating hours of all units."
+    ],
+    "medium": [
+        "The material on which computer information is stored. Examples of media are diskettes, CDs, and tape."
+    ],
+    "megabyte (mb)": [
+        "For processor storage, real and virtual storage, and channel volume, 2 to the 20th power or 1,048,576 bytes. For disk storage capacity and communications volume, 1,000,000 bytes."
+    ],
+    "mes": [
+        "See miscellaneous equipment specification."
+    ],
+    "metro global mirror": [
+        "A cascaded solution where Metro Mirror synchronously copies data to the target site. This Metro Mirror target is the source volume for Global Mirror that asynchronously copies data to a third site. This solution has the potential to provide a disaster recovery with no data loss at Global Mirror distances when the intermediate site does not participate in the disaster that occurs at the production site."
+    ],
+    "metro mirror": [
+        "A method of synchronous replication that maintains data consistency across multiple volumes within the system. Metro Mirror is generally used when the write latency caused by the distance between the source site and target site is acceptable to application performance."
+    ],
+    "mib": [
+        "See Management Information Base."
+    ],
+    "micro channel architecture (mca)": [
+        "The rules that define how subsystems and adapters use the Micro Channel bus in a computer. MCA defines the services that each subsystem can or must provide."
+    ],
+    "microcode": [
+        "Stored microinstructions, not available to users, that perform certain functions."
+    ],
+    "mih": [
+        "See missing-interrupt handler."
+    ],
+    "mirrored pair": [
+        "Two units that contain the same data and are referred to by the system as one logical unit."
+    ],
+    "mirroring": [
+        "The process of writing the same data to multiple disks at the same time. The mirroring of data protects it against data loss within the database or within the recovery log."
+    ],
+    "miscellaneous equipment specification (mes)": [
+        "A hardware change that is made after the time of the initial order."
+    ],
+    "missing-interrupt handler (mih)": [
+        "An MVS and MVS/XA facility that tracks I/O interrupts. MIH informs the operator and creates a record whenever an expected interrupt fails to occur before a specified elapsed time is exceeded."
+    ],
+    "mlc": [
+        "See machine level control."
+    ],
+    "mobile solutions terminal (most)": [
+        "The mobile terminal used by service personnel."
+    ],
+    "mode conditioning patch": [
+        "A cable that converts a single-mode signal generated by a longwave adapter into a light signal that is appropriate for multimode fiber. A second mode-conditioning-patch cable is required at the terminating end of the multimode fiber to return the light signal to a single-mode signal for a longwave adapter."
+    ],
+    "most": [
+        "See mobile solutions terminal."
+    ],
+    "mrpd": [
+        "See machine-reported product data."
+    ],
+    "mtbf": [
+        "See mean time between failures."
+    ],
+    "multiple allegiance": [
+        "A hardware function, independent of software support, that enables multiple system images to concurrently access the same logical volume (LVOL) on the storage system as long as the system images are accessing different extents. See also I/O Priority Queuing, parallel access volume."
+    ],
+    "multiple virtual storage (mvs)": [
+        "An IBM operating system that accesses multiple address spaces in virtual storage."
+    ],
+    "multiplex": [
+        "To simultaneously transmit two or more messages on a single channel."
+    ],
+    "mvs": [
+        "See Multiple Virtual Storage."
+    ],
+    "name server": [
+        "In a Fibre Channel network, the server that contains the worldwide identifiers (WWIDs) of all addressable nodes on the network."
+    ],
+    "nearline": [
+        "Pertaining to a type of storage in which data is available in a short amount of time, but not instantly."
+    ],
+    "nearline sas drive": [
+        "A drive that combines the high capacity data storage technology of a Serial Advanced Technology Attachment (SATA) drive with the benefits of a serial-attached SCSI (SAS) interface for improved connectivity."
+    ],
+    "node": [
+        "In communications, an end point of a communication link or a junction common to two or more links in a network. Nodes can be processors, communication controllers, cluster controllers, terminals, or workstations. Nodes can vary in routing and other functional capabilities.", "A single processing unit within a system. For redundancy, multiple nodes are typically deployed to make up a system."
+    ],
+    "nondisruptive": [
+        "Pertaining to an action or activity that does not result, from the customer's view, in the loss of any existing capability or resource."
+    ],
+    "nonremovable medium": [
+        "A recording medium that cannot be added to or removed from a storage device."
+    ],
+    "non-retentive data": [
+        "Data that the control program can easily recreate in the event that it is lost. The control program may cache non-retentive write data in volatile memory."
+    ],
+    "nonvolatile random access memory (nvram)": [
+        "Random access memory (storage) that retains its contents after the electrical power to the machine is shut off."
+    ],
+    "nonvolatile storage": [
+        "A storage device whose contents are not lost when power is cut off."
+    ],
+    "nvram": [
+        "See nonvolatile random access memory."
+    ],
+    "octet": [
+        "In Internet Protocol (IP) addressing, one of the four parts of a 32-bit integer presented in dotted decimal notation. See also dotted decimal notation."
+    ],
+    "oemi": [
+        "See Original Equipment Manufacturer's Information."
+    ],
+    "open system": [
+        "A system that complies with industry-defined interoperability standards. An open system can be connected to other systems complying with the same standards. See also Fibre Channel Protocol, Small Computer System Interface."
+    ],
+    "operating system/400 (os/400)": [
+        "The IBM licensed program that was used as the operating system for iSeries servers."
+    ],
+    "order confirmation code": [
+        "See authorization code."
+    ],
+    "organizationally unique identifier (oui)": [
+        "An IEEE-standards number that identifies an organization with a 24-bit, globally unique, assigned number referenced by various standards. The OUI is used as part of the worldwide ID (WWID) in the family of 802 LAN standards, such as Ethernet and token ring, and in Fibre Channel standards."
+    ],
+    "original equipment manufacturer's information (oemi)": [
+        "A reference to an older IBM standard for a computer peripheral interface, which defines the IBM S/360 and S/370 Channel to Control Unit interface. This interface uses ESA/390 logical protocols over a common bus that configures attached units in a multi-drop bus topology."
+    ],
+    "os/390": [
+        "The IBM operating system that includes and integrates functions previously provided by many IBM software products (including the MVS operating system) for the IBM S/390 family of enterprise servers."
+    ],
+    "os/400": [
+        "See Operating System/400."
+    ],
+    "oui": [
+        "See Organizationally Unique Identifier."
+    ],
+    "panel": [
+        "A formatted display of information on a screen that can also include entry fields."
+    ],
+    "parallel access volume (pav)": [
+        "A function that enables IBM Z systems to make multiple concurrent accesses to a single volume from a single host. See also I/O Priority Queuing, multiple allegiance."
+    ],
+    "parent pool": [
+        "A storage pool that receives its capacity from MDisks and has, or will have, some of its capacity allocated to child pools. See also child pool."
+    ],
+    "parity": [
+        "The state of being either even-numbered or odd-numbered. See also parity bit."
+    ],
+    "parity bit": [
+        "A binary digit added to a group of binary digits to make the sum of all the digits either always odd (odd parity) or always even (even parity). See also parity."
+    ],
+    "path group": [
+        "In ESA/390 architecture, a set of channel paths that are defined to a control unit as being associated with a single logical partition (LPAR). The channel paths are in a group state and are online with the host. See also logical partition."
+    ],
+    "path group identifier": [
+        "The ESA/390 term for the identifier that uniquely identifies a given logical partition (LPAR).", "The path-group identifier is used in communication between the LPAR program and a device. It associates the path-group identifier with one or more channel paths, thereby defining these paths to the control unit as being associated with the same LPAR."
+    ],
+    "pav": [
+        "See parallel access volume."
+    ],
+    "pci": [
+        "See Peripheral Component Interconnect."
+    ],
+    "pe": [
+        "See IBM product engineering."
+    ],
+    "peer-to-peer remote copy (pprc)": [
+        "A remote-copy service that provides a synchronous copy of a volume or disk for disaster recovery, device migration, and workload migration. See also synchronous PPRC."
+    ],
+    "performance group": [
+        "A collection of volumes that is assigned the same performance characteristics. See also performance policy."
+    ],
+    "performance policy": [
+        "A policy that specifies performance characteristics, for example quality of service (QoS). See also performance group."
+    ],
+    "peripheral component interconnect (pci)": [
+        "A local bus that provides a high-speed data path between the processor and attached devices."
+    ],
+    "pfc": [
+        "See priority flow control."
+    ],
+    "physical path": [
+        "A single path through the I/O interconnection fabric that attaches two units. For Copy Services, this is the path from a host adapter on one ESS (through cabling and switches) to a host adapter on another ESS."
+    ],
+    "point-to-point": [
+        "A Fibre Channel topology that employs direct links between each pair of communicating entities.", "See also switched fabric."
+    ],
+    "pool": [
+        "See storage pool."
+    ],
+    "pool pair": [
+        "Two storage pools that are required to balance workload. Each storage pool is controlled by a separate node."
+    ],
+    "port": [
+        "The physical entity within a host, system, or storage system that performs the data communication (transmitting and receiving) over the Fibre Channel.", "To modify a computer program that runs on a given system to enable it to run on a different system.", "An end point for communication between applications, generally referring to a logical connection. A port provides queues for sending and receiving data. Each port has a port number for identification."
+    ],
+    "post": [
+        "See power-on self-test."
+    ],
+    "power-on self-test (post)": [
+        "A series of internal diagnostic tests activated each time the system power is turned on."
+    ],
+    "pprc": [
+        "See Peer-to-Peer Remote Copy."
+    ],
+    "pps": [
+        "See primary power supply."
+    ],
+    "predictable write": [
+        "A write operation that can perform a cache operation without knowledge of the existing format on the medium. All write operations on fixed-block architecture (FBA) direct access storage devices (DASDs) are predictable. On count-key-data (CKD) DASD devices, a write operation is predictable if it performs a format write operation for the first data record on the track."
+    ],
+    "primary copy services server": [
+        "One of two Copy Services servers in a Copy Services server group. The primary Copy Services server is the active Copy Services server until it fails; it is then replaced by the backup Copy Services server. See also backup Copy Services server, Copy Services server, Copy Services server group."
+    ],
+    "primary power supply (pps)": [
+        "A power supply that attaches to the customer's ac input power; generates and distributes 390 V dc; and controls and monitors associated power functions."
+    ],
+    "priority flow control (pfc)": [
+        "A link-level flow control mechanism, IEEE standard 802.1Qbb. PFC operates on individual priorities. Instead of pausing all traffic on a link, PFC is used to selectively pause traffic according to its class."
+    ],
+    "program": [
+        "A sequence of instructions that a computer can interpret and run without a user's intervention."
+    ],
+    "program-controlled interruption": [
+        "An interruption that occurs when an I/O channel obtains a channel command word with the program-controlled interruption flag on."
+    ],
+    "program temporary fix (ptf)": [
+        "For System i, System p, and IBM Z  products, a package containing individual or multiple fixes that is made available to all licensed customers. A PTF resolves defects and might provide enhancements."
+    ],
+    "promote": [
+        "To add a logical data unit to cache memory."
+    ],
+    "protected volume": [
+        "In iSeries, a disk storage device that is protected from data loss by the use of a Redundant Array of Independent Disks (RAID). An iSeries host does not mirror a volume configured as a protected volume, while it does mirror all volumes configured as unprotected volumes. The ESS, however, can be configured to indicate that an iSeries volume is protected or unprotected and provide it with RAID protection in either case."
+    ],
+    "protocol": [
+        "A set of rules controlling the communication and transfer of data between two or more devices or systems in a communication network."
+    ],
+    "provisioned capacity": [
+        "The total capacity of all volumes and volume copies in a pool or system (formerly called both usable capacity and volume capacity)."
+    ],
+    "pseries": [
+        "The IBM server family that uses IBM's POWER architecture designed for AIX and Linux operating systems."
+    ],
+    "pseudohost": [
+        "A host connection that is not explicitly defined to the ESS and that has access to at least one volume that is configured on the ESS. For example, the FiconNet pseudo-host icon represents the FICON protocol. See also access-any mode."
+    ],
+    "ptf": [
+        "See program temporary fix."
+    ],
+    "rack": [
+        "A free-standing structure that can hold multiple servers, storage systems, chassis, switches, and other devices.", "See enclosure."
+    ],
+    "raid": [
+        "See Redundant Array of Independent Disks."
+    ],
+    "raid 0": [
+        "A data striping technique, which is commonly called RAID Level 0 or RAID 0 because of its similarity to common, RAID, data-mapping techniques. It includes no data protection, however, so, strictly speaking, the appellation RAID is a misnomer. RAID 0 is also known as data striping."
+    ],
+    "raid 1": [
+        "A form of storage array in which two or more identical copies of data are maintained on separate media."
+    ],
+    "raid 10": [
+        "A collection of two or more physical drives that present to the host an image of one or more drives. In the event of a physical device failure, the data can be read or regenerated from the other drives in the RAID due to data redundancy.", "A combination of RAID 0 and RAID 1 in which two identical copies of striped data exist, but there is no parity."
+    ],
+    "raid 3": [
+        "A form of parity RAID in which all disks are assumed to be rotationally synchronized, and in which the data stripe size is no larger than the exported block size."
+    ],
+    "raid 5": [
+        "A form of parity RAID in which the disks operate independently, the data stripe size is no smaller than the exported block size, and parity check data is distributed across the array's disks."
+    ],
+    "raid 6": [
+        "A form of RAID that can continue to process read and write requests to all of an array's virtual disks in the presence of two concurrent disk failures."
+    ],
+    "raid level": [
+        "The level of protection provided by the specific techniques of striping, mirroring, or parity used by a Redundant Array of Independent Disks (RAID)."
+    ],
+    "raid type": [
+        "See RAID level."
+    ],
+    "random access": [
+        "Pertaining to a computer's process of reading data from and writing data to storage in a nonsequential manner."
+    ],
+    "rank": [
+        "See array."
+    ],
+    "raw capacity": [
+        "The reported capacity of the drives in the system before formatting or RAID (Redundant Array of Independent Disks) is applied (formerly called physical capacity, when term refers to individual drives)."
+    ],
+    "read-only memory (rom)": [
+        "Memory in which stored data cannot be changed by the user except under special conditions."
+    ],
+    "rebuild area": [
+        "Reserved capacity that is distributed across all drives in a redundant array of drives. If a drive in the array fails, the lost array data is systematically restored into the reserved capacity, returning redundancy to the array. The duration of the restoration process is minimized because all drive members simultaneously participate in restoring the data. See also distributed RAID."
+    ],
+    "recovery key": [
+        "See encryption recovery key."
+    ],
+    "redundant array of independent disks (raid)": [
+        "A collection of two or more physical disk drives that present to the host an image of one or more logical disk drives. In the event of a physical device failure, the data can be read or regenerated from the other disk drives in the array due to data redundancy. See also Serial Storage Architecture."
+    ],
+    "repo": [
+        "See repository."
+    ],
+    "repository (repo)": [
+        "A persistent storage area for data and other application resources."
+    ],
+    "req/ack": [
+        "See request for acknowledgment and acknowledgment."
+    ],
+    "request for acknowledgment and acknowledgment (req/ack)": [
+        "A cycle of communication between two data-transport devices for the purpose of verifying the connection, which starts with a request for acknowledgment from one of the devices and ends with an acknowledgment from the second device. The REQ and ACK signals help to provide uniform timing to support synchronous data transfer between an initiator and a target. The objective of a synchronous data-transfer method is to minimize the effect of device and cable delays."
+    ],
+    "reserved allegiance": [
+        "In mainframe computing, a relationship that is created in a control unit between a device and a channel path when the device completes a Sense Reserve command. Reserved allegiance causes the control unit to guarantee access (a busy status is not presented) to the device. The device is accessed over the set of channel paths that are associated with the reserved allegiance. Access is for one or more channel programs until the reserved allegiance ends. See also contingent allegiance, implicit allegiance."
+    ],
+    "reserved capacity": [
+        "The amount of used capacity that is made up of capacity reserved for system use. See also total usable physical capacity."
+    ],
+    "rom": [
+        "See read-only memory."
+    ],
+    "s/390 storage": [
+        "Storage arrays and logical volumes (LVOLs) that are connected to S/390 servers. S/390 storage sometimes also includes zSeries storage. See also zSeries storage."
+    ],
+    "safeguarded copy": [
+        "The Safeguarded Copy feature creates safeguarded backups that are not accessible by the host system and protects these backups from corruption that can occur in the production environment. You can define a Safeguarded Copy schedule to create multiple backups on a regular basis, such as hourly or daily. You can also restore a backup to the source volume or to a different volume."
+    ],
+    "said": [
+        "See system adapter identification number."
+    ],
+    "sam": [
+        "See sequential access method."
+    ],
+    "san": [
+        "See storage area network."
+    ],
+    "sbcon": [
+        "See Single-Byte Command Code Sets Connection."
+    ],
+    "screen": [
+        "The physical surface of a display device upon which information is shown to a user."
+    ],
+    "scsi": [
+        "See Small Computer System Interface."
+    ],
+    "scsi device": [
+        "A product, such as a drive or adapter, connected to a host through an I/O interface using the Small Computer System Interface (SCSI) protocol. A SCSI device is either an initiator,target, or both. See also Small Computer System Interface."
+    ],
+    "scsi-fcp": [
+        "See SCSI Fibre Channel Protocol."
+    ],
+    "scsi fibre channel protocol (scsi-fcp)": [
+        "A standard that defines the protocol used to transfer Small Computer System Interface (SCSI) commands over the transport physical layer of the Fibre-Channel interface. This standard is published by ANSI as X3.269-1996."
+    ],
+    "scsi host system": [
+        "A host system that is attached with a Small Computer System Interface (SCSI). These host systems run on operating systems such as UNIX, OS/400, Windows NT, Windows 2000, or Novell NetWare."
+    ],
+    "scsi id": [
+        "A unique identifier assigned to a Small Computer System Interface (SCSI) device that is used in protocols on the SCSI to identify or select the device. The number of data bits on the SCSI bus determines the number of available SCSI IDs. A wide interface has 16 bits, with 16 possible IDs."
+    ],
+    "scsi initiator": [
+        "The system component that initiates communications with attached targets."
+    ],
+    "scsi target": [
+        "A device that acts as a subordinate to a SCSI initiator and consists of a set of one or more logical units (LUs), each with an assigned logical unit number (LUN). The LUs on the SCSI target are typically I/O devices."
+    ],
+    "sdram": [
+        "See synchronous dynamic random access memory."
+    ],
+    "self-timed interface (sti)": [
+        "An interface that has one or more conductors that transmit information serially between two interconnected units without requiring any clock signals to recover the data. The STI performs clock recovery independently on each serial data stream and uses information in the data stream to determine character boundaries and inter-conductor synchronization."
+    ],
+    "sequential access": [
+        "A mode of accessing data on a medium in a manner that requires the storage device to access consecutive storage locations on the medium."
+    ],
+    "sequential access method (sam)": [
+        "An access method for storing, deleting, or retrieving data in a continuous sequence based on the logical order of the records in the file."
+    ],
+    "sequential stage group": [
+        "The number of tracks that are obtained in advance for a sequential operation."
+    ],
+    "serial connection": [
+        "A method of device interconnection for determining interrupt priority by connecting the interrupt sources serially."
+    ],
+    "serial storage architecture (ssa)": [
+        "An American National Standards Institute (ANSI) standard, implemented by IBM, for a high-speed serial interface that provides point-to-point connection for peripherals, such as storage arrays.", "See also Redundant Array of Independent Disks, spatial reuse, SSA adapter."
+    ],
+    "server": [
+        "A software program or a computer that provides services to other software programs or other computers. See also client.", "A computer program or a device that provides functions for other programs or devices, called clients. See also client and host."
+    ],
+    "server message block (smb)": [
+        "A protocol that manages requests and responses in a client/server environment so that clients on a network can share files, directories, and devices. See also Server Message Block 2.0."
+    ],
+    "service boundary": [
+        "A category that identifies a group of components that are unavailable for use when one of the components of the group is being serviced. For example, service boundaries are provided on the ESS in each host bay and in each cluster."
+    ],
+    "service information message (sim)": [
+        "A message, generated by a storage subsystem, that is the result of error event location and analysis. A SIM indicates that some service action is required."
+    ],
+    "service personnel": [
+        "A generalization referring to individuals or companies authorized to service IBM products. The terms service provider, service representative, and service support representative (SSR) refer to types of service personnel. See also service support representative."
+    ],
+    "service processor": [
+        "The logic that contains the processor function to start the system processor and handle error conditions."
+    ],
+    "service support representative (ssr)": [
+        "An individual or a company authorized to service IBM products. See also service personnel."
+    ],
+    "shared storage": [
+        "Storage within a storage facility that is configured such that multiple homogenous or divergent hosts can access the storage concurrently. The storage has a uniform appearance to all hosts; the host programs that access the storage must have a common model for the information on a storage device."
+    ],
+    "shortwave laser adapter": [
+        "A connector used between a host and the ESS to support shortwave fibre-channel communication."
+    ],
+    "sim": [
+        "See service information message."
+    ],
+    "simm": [
+        "See single inline memory module."
+    ],
+    "simplex": [
+        "Pertaining to communication that carries a signal in one direction only. Radio transmission is an example of simplex communication."
+    ],
+    "simplex volume": [
+        "A volume that is not part of a FlashCopy, Extended Remote Copy (XRC), or Peer-to-Peer Remote Copy (PPRC) volume pair."
+    ],
+    "single-byte command code sets connection (sbcon)": [
+        "The standard, approved by the American National Standards Institute (ANSI), for the command set used by ESCON and FICON, known as FC-SB as used over a standard fibre-channel physical interface."
+    ],
+    "single inline memory module (simm)": [
+        "In computer hardware, a small circuit card that carries a number of surface-mounted memory chips in a space-saving configuration with the connector pins protruding in a single line from the edge of the card. Varying numbers of SIMMs can be plugged easily into slots in a memory board to expand random access memory."
+    ],
+    "small computer system interface (scsi)": [
+        "An ANSI-standard electronic interface that allows personal computers to communicate with peripheral hardware, such as disk drives, tape drives, CD-ROM drives, printers, and scanners faster and more flexibly than previous interfaces. See also Internet Small Computer System Interface, open system, SCSI device."
+    ],
+    "smart relay host": [
+        "A mail relay or mail gateway that has the capability to correct email addressing problems."
+    ],
+    "smb": [
+        "See Server Message Block."
+    ],
+    "smp": [
+        "See symmetrical multiprocessor system."
+    ],
+    "smp system": [
+        "See symmetrical multiprocessor system."
+    ],
+    "software transparency": [
+        "Criteria applied to a processing environment that states that changes do not require modifications to the host software in order to continue to provide an existing function."
+    ],
+    "solid-state drive (ssd)": [
+        "A storage device that contains nonvolatile flash memory. A\u00a0solid-state drive (SSD) has no moving mechanical components.", "See flash drive."
+    ],
+    "space efficient": [
+        "See thin provisioning."
+    ],
+    "spare": [
+        "An extra storage component, such as a drive or tape, that is predesignated for use as a replacement for a failed component."
+    ],
+    "spare drive": [
+        "A drive reserved in an array for rebuilding a failed drive in a RAID. \u00a0Should a drive fail in a RAID, a spare drive from within that device adapter (DA) pair will be selected to rebuild it."
+    ],
+    "spatial reuse": [
+        "A feature of Serial Storage Architecture (SSA) that enables a device adapter (DA) loop to support many simultaneous read/write operations. See also Serial Storage Architecture."
+    ],
+    "ssa": [
+        "See Serial Storage Architecture."
+    ],
+    "ssa adapter": [
+        "A physical adapter based on Serial Storage Architecture (SSA). SSA adapters connect disk drive modules (DDMs) to ESS clusters. See also device adapter, Serial Storage Architecture."
+    ],
+    "ssd": [
+        "See solid-state drive."
+    ],
+    "ssr": [
+        "See service support representative."
+    ],
+    "stacked status": [
+        "In mainframe computing, the condition in which the control unit is in a holding status for the channel, and, the last time the control unit attempted to present the status, the channel responded with the stack-status control."
+    ],
+    "staging": [
+        "The process of returning return data or an object from an offline or low-priority device to an online or higher priority device, typically on demand of the system or on request of the user."
+    ],
+    "standard volume": [
+        "A volume that emulates one of several S/390 volume types, such as the 3390-2, 3390-3, 3390-9, 3390-2 (3380-track mode), or 3390-3 (3380-track mode). A standard volume presents the same number of cylinders and capacity to the host as the native S/390-volume type of the same name presents. See also custom volume."
+    ],
+    "sti": [
+        "See self-timed interface."
+    ],
+    "storage architecture type (storage type)": [
+        "The type of storage architecture, either count key data (CKD) or fixed block (FB), for which an array, pool, or volume is provisioned. See also count key data, fixed-block architecture."
+    ],
+    "storage area network (san)": [
+        "A dedicated storage network tailored to a specific environment, combining servers, systems, storage products, networking products, software, and services."
+    ],
+    "storage complex": [
+        "Multiple storage facilities."
+    ],
+    "storage controller": [
+        "A device, such as a Redundant Array of Independent Disks (RAID) controller, that creates and manages other storage devices."
+    ],
+    "storage device": [
+        "A physical unit that provides a mechanism to store data on a given medium so that it can be subsequently retrieved."
+    ],
+    "storage enclosure": [
+        "A specialized chassis that is designed to hold and power drives while providing a mechanism to allow them to communicate to one or more separate computers."
+    ],
+    "storage facility": [
+        "A physical unit that consists of a storage server integrated with one or more storage devices to provide storage capability to a host computer."
+    ],
+    "storage node": [
+        "A component of a storage system that provides internal storage or a connection to one or more external storage systems."
+    ],
+    "storage pod": [
+        "A subcomponent of a network-attached storage (NAS) system that consists of two or more storage nodes and one or more supported storage systems."
+    ],
+    "storage pool (pool)": [
+        "A collection of storage that identifies an underlying set of resources. These resources provide the capacity and management requirements for a volume or set of volumes."
+    ],
+    "storage server": [
+        "A physical unit that manages attached storage devices and provides access to the storage or storage related functions for one or more attached hosts."
+    ],
+    "storage system": [
+        "A system that provides persistent storage within a network. A storage system can include facilities for host attachment, user role authentication, a command-line interface (CLI), a graphical user interface (GUI), and storage devices that most often include Redundant Array of Independent Disks (RAID) controllers. It might also include agents for enabling third-party management software to monitor or manage the storage devices."
+    ],
+    "storage type": [
+        "See storage architecture type."
+    ],
+    "stored capacity": [
+        "The amount of capacity that is used to store data that is written by a host after data reduction.", "See also data reduction, total usable physical capacity."
+    ],
+    "stripe": [
+        "The set of tracks located on the set of physical disk drives configured in a Redundant Array of Independent Disks (RAID) logical unit (LU) that have the same parity track."
+    ],
+    "striping": [
+        "A data mapping technique for disk arrays in which fixed-length sequences of virtual-disk data addresses are mapped to sequences of member disk addresses in a regular rotating pattern."
+    ],
+    "subchannel": [
+        "A logical function of a channel subsystem associated with the management of a single device."
+    ],
+    "subsystem identifier": [
+        "A number that uniquely identifies a logical subsystem (LSS) within a computer installation."
+    ],
+    "support assistance": [
+        "A function that is used to provide support personnel access to the system to complete troubleshooting and maintenance tasks."
+    ],
+    "support catcher": [
+        "See catcher."
+    ],
+    "switched fabric": [
+        "A Fibre Channel topology that provides the underlying structure to interconnect multiple nodes and provides the necessary switching functions to support communication among multiple nodes. See also point-to-point."
+    ],
+    "symmetrical multiprocessor system (smp, smp system)": [
+        "A system containing multiple processors that are essentially identical and perform identical functions."
+    ],
+    "synchronous dynamic random access memory (sdram)": [
+        "A type of dynamic random access memory (DRAM) with features that make it faster than standard DRAM."
+    ],
+    "synchronous pprc": [
+        "A function of a storage server that maintains a consistent copy of a logical volume (LVOL) on the same storage server or on another storage server. All modifications that any attached host performs on the primary LVOL are also performed on the secondary LVOL. See also Peer-to-Peer Remote Copy."
+    ],
+    "synchronous replication": [
+        "A type of replication in which the application write operation is made to both the source volume and target volume before control is given back to the application. See also asynchronous replication."
+    ],
+    "synchronous write": [
+        "A form of synchronous I/O that writes the file data to disk, updates the inode times, and writes the updated inode to disk. When the write returns to the caller, both the data and the inode have been written to disk."
+    ],
+    "syslog": [
+        "A standard for transmitting and storing log messages from many sources to a centralized location to enhance system management."
+    ],
+    "system adapter identification number (said)": [
+        "The unique identification number automatically assigned to each TESS host adapter for use by ESS Copy Services."
+    ],
+    "tb": [
+        "See terabyte."
+    ],
+    "tcp": [
+        "See Transmission Control Protocol."
+    ],
+    "tcp/ip": [
+        "See Transmission Control Protocol/Internet Protocol."
+    ],
+    "teletypewriter (tty)": [
+        "Originally an electromagnetic device consisting of a combined keyboard and printer used to communicate over telephone lines or other wired serial connections. The abbreviation TTY is now used to describe any serial teletypewriter-like connection."
+    ],
+    "terabit (tb)": [
+        "For processor storage, real and virtual storage, and channel volume, 2 to the power of 40 or 1 099 511 627 776 bits. For disk storage capacity and communications volume, 1 000 000 000 000 bits."
+    ],
+    "terabyte (tb)": [
+        "For processor storage, real and virtual storage, and channel volume, 2 to the 40th power or 1 099 511 627 776 bytes. For disk storage capacity and communications volume, 1 000 000 000 000 bytes."
+    ],
+    "thin-provisioned volume": [
+        "A volume that allocates storage when data is written to it."
+    ],
+    "thin provisioning": [
+        "The ability to defer capacity allocation on a storage resource until data is actually written to it."
+    ],
+    "thousands of power-on hours (kpoh)": [
+        "A unit of time used to measure the mean time between failures (MTBF)."
+    ],
+    "time sharing option extensions (tso/e)": [
+        "A licensed program that is based on Time Sharing Option (TSO). With TSO/E, z/OS users can interactively share computer time and resources."
+    ],
+    "total usable physical capacity": [
+        "The amount of physical configured storage space that is available for stored capacity or reserved capacity. This capacity can consist of both internal storage through arrays and external storage through MDisks. See also capacity threshold, reserved capacity, stored capacity."
+    ],
+    "track": [
+        "A unit of storage on a count-key-data (CKD) device that can be formatted to contain a number of data records. See also data record, home address, track-descriptor record."
+    ],
+    "track-descriptor record": [
+        "A special record on a track that follows the home address. The control program uses the track-descriptor record to maintain certain information about the track. The record has a count field with a key length of zero, a data length of 8, and a record number of 0. This record is sometimes referred to as R0. See also track."
+    ],
+    "transmission control protocol (tcp)": [
+        "A communication protocol used in the Internet and in any network that follows the Internet Engineering Task Force (IETF) standards for internetwork protocol. TCP provides a reliable host-to-host protocol in packet-switched communication networks and in interconnected systems of such networks. See also Internet Protocol."
+    ],
+    "transmission control protocol/internet protocol (tcp/ip)": [
+        "An industry-standard, nonproprietary set of communication protocols that provides reliable end-to-end connections between applications over interconnected networks of different types."
+    ],
+    "transparent cloud tiering": [
+        "The functions that use cloud storage as an extension of on-premises storage."
+    ],
+    "trial license": [
+        "A temporary entitlement to use a licensed function."
+    ],
+    "tse for flashcopy": [
+        "A thin-provisioning method in which storage space is allocated from a TSE repository on an as needed basis. See also TSE repository."
+    ],
+    "tse repository": [
+        "The amount of capacity in a storage pool reserved for volumes that use a thin-provisioning method of TSE for FlashCopy. See also TSE for FlashCopy."
+    ],
+    "tso/e": [
+        "See Time Sharing Option Extensions."
+    ],
+    "tty": [
+        "See teletypewriter."
+    ],
+    "ultra-scsi": [
+        "An enhanced Small Computer System Interface (SCSI)."
+    ],
+    "unprotected volume": [
+        "A volume that is recognized by the AS/400 host as an unprotected device, even though the storage resides on a Redundant Array of Independent Disks (RAID) and is therefore fault tolerant by definition. The data in an unprotected volume can be mirrored. An unprotected volume is also referred to as an unprotected device."
+    ],
+    "update": [
+        "To modify a file or data set with current information.", "Software maintenance such as a manufacturing refresh, refresh pack, or fix pack that changes the modification level of a product.", "To apply fixes to a system."
+    ],
+    "upgrade": [
+        "To install a new version or release of a product to replace an earlier version or release of the same product.", "Any hardware or software change to a later release, or any hardware addition or software addition."
+    ],
+    "usable capacity": [
+        "The amount of capacity that is available for storing data on a system, pool, array, or MDisk after formatting and RAID techniques are applied (formerly called physical capacity).", "The amount of provisioned capacity that can be created in a system or pool without running out of usable capacity given the current data reduction savings being achieved. This capacity equals the usable capacity divided by the data reduction savings percentage (formerly called effective capacity)."
+    ],
+    "user role": [
+        "An identifier that is assigned to a user that defines the set of permissions that are granted to that user."
+    ],
+    "utility device": [
+        "The ESA/390 term for the device used with Extended Remote Copy (XRC) to access information that describes the modifications performed on the source copy."
+    ],
+    "versatile storage specialist": [
+        "The web-based management interface to the Versatile Storage Server."
+    ],
+    "virtual machine (vm)": [
+        "An instance of a data-processing system that appears to be at the exclusive disposal of a single user, but whose functions are accomplished by sharing the resources of a physical data-processing system.", "An emulation of a particular computer system. Virtual machines operate based on the computer architecture and functions of a real or hypothetical computer. Their implementations might involve specialized hardware, software, or a combination of both."
+    ],
+    "virtualized capacity": [
+        "The amount of capacity that is contributed to a storage pool by a given provisioning group."
+    ],
+    "vm": [
+        "See virtual machine."
+    ],
+    "volume": [
+        "A discrete unit of storage on disk, tape or other data recording medium that supports some form of identifier and parameter list, such as a volume label or input/output control.", "A fixed amount of physical or virtual storage on a data storage medium."
+    ],
+    "volume access set": [
+        "The set of I/O groups that allows host access to a volume. This set can optionally include the caching I/O group."
+    ],
+    "volume snapshot": [
+        "A collection of objects on a cloud storage account that represents the data of a volume at a particular time."
+    ],
+    "worldwide id (wwid)": [
+        "A name identifier that is unique worldwide and that is represented by a 64-bit value that includes the IEEE-assigned organizationally unique identifier (OUI)."
+    ],
+    "worldwide name (wwn)": [
+        "A 64-bit, unsigned name identifier that is unique."
+    ],
+    "worldwide node name (wwnn)": [
+        "A unique 64-bit identifier for a host containing a Fibre Channel port. See also worldwide port name."
+    ],
+    "worldwide port name (wwpn)": [
+        "A unique 64-bit identifier associated with a Fibre Channel adapter port. The WWPN is assigned in an implementation-independent and protocol-independent manner. See also access-any mode, worldwide node name."
+    ],
+    "write hit": [
+        "A write operation in which the data being replaced is in the cache."
+    ],
+    "write penalty": [
+        "The performance impact of a RAID-5 write operation."
+    ],
+    "write-through mode": [
+        "A process in which data is written to a storage device at the same time as the data is cached."
+    ],
+    "wwid": [
+        "See worldwide ID."
+    ],
+    "wwn": [
+        "See worldwide name."
+    ],
+    "wwnn": [
+        "See worldwide node name."
+    ],
+    "wwpn": [
+        "See worldwide port name."
+    ],
+    "xrc": [
+        "See extended remote copy."
+    ],
+    "xseries": [
+        "The product name of an IBM eServer product that emphasizes industry-standard server scalability and self-managing server technologies. It is the successor to the Netfinity family of servers."
+    ],
+    "z/architecture": [
+        "An IBM architecture for mainframe computers and peripherals. The zSeries family of servers uses the z/Architecture. It is the successor to the S/390 and 9672 family of servers. See also Enterprise Systems Architecture/390."
+    ],
+    "z global mirror": [
+        "A method of an asynchronous replication function that maintains data consistency across multiple volumes that are attached to a z/OS system. Time-based data consistency is maintained through the Data Facility Storage Management Subsystem (DFSMS) system data mover (SDM) component."
+    ],
+    "zoning": [
+        "The grouping of multiple ports to form a virtual, private, storage network. Ports that are members of a zone can communicate with each other, but are isolated from ports in other zones. See also Fibre Channel."
+    ],
+    "z/os": [
+        "An IBM mainframe operating system that uses 64-bit real storage."
+    ],
+    "zseries": [
+        "See IBM Z."
+    ],
+    "zseries storage": [
+        "Storage arrays and logical volumes (LVOLs) that are defined in the ESS as connected to zSeries servers. See also S/390 storage."
+    ]
+}
