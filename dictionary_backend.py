@@ -2,7 +2,7 @@ import json
 
 def word_definition(word):
     # Opening JSON file
-    file = open('dictionary1.json')
+    file = open('dictionary.json')
     data = json.load(file)
     try:
         definition = data[word.lower()]
@@ -17,7 +17,7 @@ def word_definition(word):
 
 def add_definition(word, definition):
     # Opening JSON file
-    with open('dictionary1.json', 'r+') as file:
+    with open('dictionary.json', 'r+') as file:
         definition = definition.split(', ') # Check for multiple definitions
         data = json.load(file)
         data.update({word.lower(): definition}) # Add new word to dictionary
