@@ -101,8 +101,8 @@ def main(page: ft.Page):
                     ft.PopupMenuItem(
                         content=ft.Row([ 
                                 ft.Container(
-                                    height=75,
-                                    width=300,
+                                    height=95,
+                                    width=255,
                                     alignment=ft.alignment.center,
                                     padding=10,
                                     border_radius=10,
@@ -125,8 +125,8 @@ def main(page: ft.Page):
                     ft.PopupMenuItem(
                         content=ft.Row([ 
                                 ft.Container(
-                                    height=75,
-                                    width=300,
+                                    height=95,
+                                    width=255,
                                     alignment=ft.alignment.center,
                                     padding=10,
                                     border_radius=10,
@@ -150,7 +150,7 @@ def main(page: ft.Page):
                         content=ft.Row([ 
                                 ft.Container(
                                     height=60,
-                                    width=300,
+                                    width=255,
                                     alignment=ft.alignment.center,
                                     padding=10,
                                     border_radius=10,
