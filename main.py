@@ -10,7 +10,7 @@ def main(page: ft.Page):
     page.window_min_height = 350
     #page.window_max_height = 400
     page.window_min_width = 655
-    page.window_height = 620
+    page.window_height = 605
     page.window_width = 700
     page.scroll = ft.ScrollMode.ADAPTIVE
 
@@ -33,7 +33,6 @@ def main(page: ft.Page):
                 self.controls.remove(self.controls[0])
             except Exception:
                 break
-        
         page.update()
     
     def swap_theme_color(self):
@@ -55,6 +54,9 @@ def main(page: ft.Page):
         else:
             page.theme_mode = ft.ThemeMode.DARK
         page.update()
+
+    def add_word(self):
+        db.add_definition(word=new_word.value, definition=new_word_def.value)
 
     results = ft.Text(
         style=ft.TextThemeStyle.BODY_SMALL
@@ -78,11 +80,26 @@ def main(page: ft.Page):
         on_click=clear_history
     )
 
-
     search = ft.TextField(
             label="Search", 
             tooltip="Look up word definition",
             on_submit=search_change
+    )
+
+    new_word = ft.TextField(
+            label="Word",
+            multiline=True,
+            min_lines=1,
+            max_lines=3,
+            expand=True,
+    )
+
+    new_word_def = ft.TextField(
+            label="Definition",
+            multiline=True,
+            min_lines=1,
+            max_lines=3,
+            expand=True,
     )
 
     page.appbar = ft.AppBar(
@@ -101,22 +118,15 @@ def main(page: ft.Page):
                     ft.PopupMenuItem(
                         content=ft.Row([ 
                                 ft.Container(
-                                    height=95,
-                                    width=255,
+                                    height=86,
+                                    width=300,
                                     alignment=ft.alignment.center,
                                     padding=10,
                                     border_radius=10,
+                                    expand=True,
 
                                     content=ft.Column(
-                                        controls=[
-                                            ft.TextField(
-                                                label="Word",
-                                                multiline=True,
-                                                min_lines=1,
-                                                max_lines=3,
-                                                expand=True,
-                                            )
-                                        ]
+                                        controls=[new_word]
                                     )        
                                 )
                             ]
@@ -125,22 +135,15 @@ def main(page: ft.Page):
                     ft.PopupMenuItem(
                         content=ft.Row([ 
                                 ft.Container(
-                                    height=95,
-                                    width=255,
+                                    height=86,
+                                    width=300,
                                     alignment=ft.alignment.center,
                                     padding=10,
                                     border_radius=10,
+                                    expand=True,
 
                                     content=ft.Column(
-                                        controls=[
-                                            ft.TextField(
-                                                label="Definition",
-                                                multiline=True,
-                                                min_lines=1,
-                                                max_lines=3,
-                                                expand=True,
-                                            )
-                                        ]
+                                        controls=[new_word_def]
                                     )        
                                 )
                             ]
@@ -150,11 +153,11 @@ def main(page: ft.Page):
                         content=ft.Row([ 
                                 ft.Container(
                                     height=60,
-                                    width=255,
+                                    width=300,
                                     alignment=ft.alignment.center,
                                     padding=10,
                                     border_radius=10,
-                                    on_hover= False,
+                                    expand=True,
 
                                     content=ft.Column(
                                         controls=[
@@ -163,6 +166,7 @@ def main(page: ft.Page):
                                                 tooltip="Add word and definition to dictionary",
                                                 width=300,
                                                 expand=True,
+                                                on_click=add_word
                                             )
                                         ]
                                     )        
