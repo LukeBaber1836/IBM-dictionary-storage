@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import json
 
+# Link where data is pulled from: "https://www.ibm.com/docs/en/ds8900/9.4.0?topic=glossary"
 def get_text_ibm(url):
     page_data = requests.get(url).text
     soup = BeautifulSoup(page_data, 'html.parser')
@@ -18,6 +19,7 @@ def get_text_ibm(url):
             break
     return data
 
+# Link where data is pulled from: "https://www.snia.org/education/online-dictionary/a/s/d/all"
 def get_text_snia(url):
     page_data = requests.get(url).text
     soup = BeautifulSoup(page_data, 'html.parser')
@@ -34,6 +36,24 @@ def get_text_snia(url):
         except Exception:
             break
     return data
+
+def json_to_csv(file_path):
+    file_1 = open(file_path)
+    data_1 = json.load(file_1)
+    num = 0
+    with open("Test Files/dictionary_ibm.csv", "a+") as file:
+        while True:
+            if num == len(data_1):
+                break
+
+            file.write('"' + list(data_1.keys())[num] + '"' + ' ')
+            # Check for multiple definitions
+            for val in list(data_1.values())[num]:
+                if val != list(data_1.values())[num][(len(list(data_1.values())[num]))-1]:
+                    file.write(',' + '"' + val + '"')
+                else:
+                    file.write(',' + '"' + val + '"' + "\n")
+            num +=1
 
 def update_dictionary():
     url = "https://www.ibm.com/docs/en/ds8900/9.4.0?topic=glossary"
@@ -52,5 +72,4 @@ def add_definition(word, definition):
         json.dump(data, file, indent = 4) # convert back to json
 
 if __name__ == "__main__":
-    update_dictionary()
-    # data = get_text_snia("https://www.snia.org/education/online-dictionary/a/s/d/all")
+    json_to_csv('dictionary_files/dictionary_snia.json')

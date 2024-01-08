@@ -1,8 +1,8 @@
-import dictionary_backend as db
+import backend_supabase as db
 import flet as ft
 
 def main(page: ft.Page):
-    page.title = "Dictionary App"
+    page.title = "IBM Terminology Lookup"
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
     page.window_center()
     page.theme_mode = ft.ThemeMode.DARK
@@ -10,14 +10,14 @@ def main(page: ft.Page):
     page.window_min_height = 350
     #page.window_max_height = 400
     page.window_min_width = 655
-    page.window_height = 605
+    page.window_height = 615
     page.window_width = 700
     page.scroll = ft.ScrollMode.ADAPTIVE
 
-    def search_change(self):
-        definition = db.word_definition(str(self.control.value))
+    def word_searched(self):
+        definition = db.get_definition(str(self.control.value))
         results.value = definition
-        word_searched.value = str(self.control.value).capitalize()
+        word_searched_text.value = str(self.control.value).capitalize()
         history.controls.append(ft.Text(
                 str(self.control.value),
                 style=ft.TextThemeStyle.BODY_MEDIUM
@@ -68,7 +68,7 @@ def main(page: ft.Page):
         padding=10,     
     )
 
-    word_searched = ft.Text(
+    word_searched_text = ft.Text(
         value="Definitions",
         style=ft.TextThemeStyle.HEADLINE_MEDIUM,
     )
@@ -83,7 +83,7 @@ def main(page: ft.Page):
     search = ft.TextField(
             label="Search", 
             tooltip="Look up word definition",
-            on_submit=search_change
+            on_submit=word_searched
     )
 
     new_word = ft.TextField(
@@ -102,10 +102,22 @@ def main(page: ft.Page):
             expand=True,
     )
 
+    ibm_logo = ft.Container(
+        width=100,
+        # alignment=ft.alignment.center,
+        padding=8,
+        content=ft.Image(
+            src=f"assets\icon_white_200.png",
+            width=100,
+            height=100,
+            fit=ft.ImageFit.SCALE_DOWN,
+        )
+    )
+
     page.appbar = ft.AppBar(
-        leading=ft.Icon(ft.icons.BOOK),
-        leading_width=40,
-        title=ft.Text("Dictionary App"),
+        leading=ibm_logo,
+        leading_width=100,
+        title=ft.Text("Terminology Lookup"),
         center_title=False,
         bgcolor=ft.colors.BLUE_900,
         color= ft.colors.WHITE,
@@ -113,7 +125,6 @@ def main(page: ft.Page):
             ft.PopupMenuButton(
                 icon = ft.icons.ADD,
                 tooltip="Add definition",
-                # expand=True,
                 items = [
                     ft.PopupMenuItem(
                         content=ft.Row([ 
@@ -298,7 +309,7 @@ def main(page: ft.Page):
 
                             content=ft.Column(
                                 controls=[
-                                    word_searched,
+                                    word_searched_text,
                                     results
                                 ]
                             )
