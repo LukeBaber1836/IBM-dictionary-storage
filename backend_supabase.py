@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 import os
 from supabase import create_client, Client
+import uuid
 
 load_dotenv()
 
@@ -17,7 +18,7 @@ supabase = create_client(url, key)
 
 def get_definition(word):
     # Get data from supabase database
-    data = supabase.table("IBM_terms").select("id, term, definition").eq("term", f"{word.lower()}").execute()
+    data = supabase.table("IBM_terms").select("*").eq("term", word.lower()).execute()
 
     if len(data.data) != 0:
         deff_list = data.data[0]['definition'].split('|')
@@ -31,10 +32,19 @@ def get_definition(word):
     return (full_deff)
 
 def add_definition(word, definition):
-    # Opening JSON file
-    with open('dictionary.json', 'r+') as file:
-        definition = definition.split(', ') # Check for multiple definitions
+    data = supabase.table("IBM_terms").select("*").execute()
+    word_exists = supabase.table("IBM_terms").select("*").eq("term", word.lower()).execute()
+
+    # If not repeat, add new definition
+    if len(word_exists.data) == 0:
+        data = supabase.table("IBM_terms").insert([{"term":word.lower(), "definition":definition}]).execute()
+        return True
+    else:
+        print("Definition already exists")
+        return False
         
 
 if __name__ == "__main__":
-    print(get_definition("dog"))
+    # print(get_definition("dog"))
+    # print(add_definition("DS8000","A really cool product"))
+    print(get_definition("hello"))

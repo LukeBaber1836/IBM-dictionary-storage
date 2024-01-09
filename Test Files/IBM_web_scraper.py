@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import json
+import uuid
 
 # Link where data is pulled from: "https://www.ibm.com/docs/en/ds8900/9.4.0?topic=glossary"
 def get_text_ibm(url):
@@ -61,6 +62,25 @@ def update_dictionary():
     for index in range(len(dictionary)):
         add_definition(list(dictionary.keys())[index], list(dictionary.values())[index])
 
+def edit_csv():
+    source = open("Test Files/dictionary_ibm_3.csv", "r")
+    with open('Test Files/dictionary_ibm_4.csv', "w+") as file:
+        x = 0
+        for line in source:
+            line = line.split(',')
+            # Skip first row of csv to preserve headers
+            if line[0] == "id":
+                line = ",".join(line) # Merge list back to string
+                file.write(line)
+                continue
+            else:
+                # Change id to UUID
+                line[0] = str(uuid.uuid4())
+                line = ",".join(line) # Merge list back to string
+                file.write(line)
+                x += 1
+            print(f"{x}", end='\r')
+                
 
 def add_definition(word, definition):
     # Opening JSON file
@@ -72,4 +92,6 @@ def add_definition(word, definition):
         json.dump(data, file, indent = 4) # convert back to json
 
 if __name__ == "__main__":
-    json_to_csv('dictionary_files/dictionary_snia.json')
+    edit_csv()
+    print("\n done")
+    # json_to_csv('dictionary_files/dictionary_snia.json')
