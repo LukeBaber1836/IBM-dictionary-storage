@@ -1,4 +1,4 @@
-# An ibm_terminology_lookup Flet app
+# IBM Terminology Lookup Flet App
 
 An example of a minimal Flet app.
 
