@@ -16,8 +16,12 @@ def main(page: ft.Page):
 
     def word_searched(self):
         definition = db.get_definition(str(self.control.value))
+        other_definitions = db.other_definitions(str(self.control.value))
         results.value = definition
+        other_words.value = other_definitions
         word_searched_text.value = str(self.control.value).capitalize()
+
+        # Add searched word to history
         history.controls.append(ft.Text(
                 str(self.control.value),
                 style=ft.TextThemeStyle.BODY_MEDIUM
@@ -33,6 +37,12 @@ def main(page: ft.Page):
                 self.controls.remove(self.controls[0])
             except Exception:
                 break
+        
+        # Reset seach and results to default values
+        word_searched_text.value = 'Definitions'
+        search.value = ''
+        results.value = ''
+        other_words.value = ''
         page.update()
     
     def swap_theme_color(self):
@@ -59,6 +69,10 @@ def main(page: ft.Page):
         db.add_definition(word=new_word.value, definition=new_word_def.value)
 
     results = ft.Text(
+        style=ft.TextThemeStyle.BODY_SMALL
+    )
+
+    other_words = ft.Text(
         style=ft.TextThemeStyle.BODY_SMALL
     )
 
@@ -310,7 +324,8 @@ def main(page: ft.Page):
                             content=ft.Column(
                                 controls=[
                                     word_searched_text,
-                                    results
+                                    results,
+                                    other_words
                                 ]
                             )
                         )
@@ -319,5 +334,5 @@ def main(page: ft.Page):
             ]
         )
     )
-
+    
 ft.app(target=main)
