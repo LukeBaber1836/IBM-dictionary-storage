@@ -6,6 +6,7 @@ class Elements(ft.UserControl):
         super().__init__()
         self.page = page
 
+
     results = ft.Text(
         style=ft.TextThemeStyle.BODY_SMALL
     )
@@ -190,7 +191,7 @@ class Elements(ft.UserControl):
                             controls=[
                                 ft.ElevatedButton(
                                     text="Add word",
-                                    tooltip="Add word and definition to the dictionary",
+                                    tooltip="Add word to data base, use '|' to separate definitions",
                                     width=300,
                                     expand=True,
                                     on_click=Functions.add_word
@@ -204,23 +205,49 @@ class Elements(ft.UserControl):
     ]
 
     username = ft.TextField(
-            label="Username",
-            multiline=True,
-            min_lines=1,
-            max_lines=3,
+            label="Email",
             expand=True,
     )
 
     password = ft.TextField(
             label="Password",
-            multiline=True,
-            min_lines=1,
-            max_lines=3,
             expand=True,
+    )
+
+    login_button = ft.ElevatedButton(
+        text="Login",
+        tooltip="Log into your account",
+        width=300,
+        expand=True,
+        on_click= Functions.login_or_logout
     )
 
     login_status = ft.Text(
         value="Not logged in",
+        color=ft.colors.RED,
+        style=ft.TextThemeStyle.BODY_LARGE,
+    )
+
+    new_email = ft.TextField(
+        label="New Email",
+        expand=True,
+    )
+
+    new_password = ft.TextField(
+        label="New Password",
+        expand=True,
+    )
+
+    signup_button = ft.ElevatedButton(
+        text="Sign Up",
+        tooltip="Sign up with email and password",
+        width=300,
+        expand=True,
+        on_click= Functions.sign_up
+    )
+
+    signup_status = ft.Text(
+        value="Not signed up",
         color=ft.colors.RED,
         style=ft.TextThemeStyle.BODY_SMALL,
     )
@@ -230,6 +257,7 @@ class Elements(ft.UserControl):
             content=ft.Row([ 
                     ft.Container(
                         height=86,
+                        image_fit=True,
                         width=300,
                         alignment=ft.alignment.center,
                         padding=10,
@@ -260,7 +288,7 @@ class Elements(ft.UserControl):
                 ]
             )
         ),
-        ft.ElevatedButton(
+        ft.PopupMenuItem(
             content=ft.Row([ 
                     ft.Container(
                         height=60,
@@ -271,34 +299,116 @@ class Elements(ft.UserControl):
                         expand=True,
 
                         content=ft.Column(
-                            controls=[
-                                ft.ElevatedButton(
-                                    text="Login",
-                                    tooltip="Log into your account",
-                                    width=300,
-                                    expand=True,
-                                    on_click=Functions.login
-                                )
-                            ]
+                            controls=[login_button]
                         )        
                     )
                 ]
             )
         ),
-        login_status
+        ft.PopupMenuItem(
+            content=ft.Row([ 
+                    ft.Container(
+                        width=300,
+                        alignment=ft.alignment.center,
+                        padding=2,
+                        border_radius=10,
+                        expand=True,
+
+                        content=ft.Column(
+                            controls=[login_status]
+                        )        
+                    )
+                ]
+            )
+        )
     ]
 
+    signup_page = [
+            ft.PopupMenuItem(
+                content=ft.Row([ 
+                        ft.Container(
+                            height=86,
+                            image_fit=True,
+                            width=300,
+                            alignment=ft.alignment.center,
+                            padding=10,
+                            border_radius=10,
+                            expand=True,
+
+                            content=ft.Column(
+                                controls=[new_email]
+                            )        
+                        )
+                    ]
+                )
+            ),
+            ft.PopupMenuItem(
+                content=ft.Row([ 
+                        ft.Container(
+                            height=86,
+                            width=300,
+                            alignment=ft.alignment.center,
+                            padding=10,
+                            border_radius=10,
+                            expand=True,
+
+                            content=ft.Column(
+                                controls=[new_password]
+                            )        
+                        )
+                    ]
+                )
+            ),
+            ft.PopupMenuItem(
+                content=ft.Row([ 
+                        ft.Container(
+                            height=60,
+                            width=300,
+                            alignment=ft.alignment.center,
+                            padding=10,
+                            border_radius=10,
+                            expand=True,
+
+                            content=ft.Column(
+                                controls=[signup_button]
+                            )        
+                        )
+                    ]
+                )
+            ),
+            ft.PopupMenuItem(
+                content=ft.Row([ 
+                        ft.Container(
+                            width=300,
+                            alignment=ft.alignment.center,
+                            padding=2,
+                            border_radius=10,
+                            expand=True,
+
+                            content=ft.Column(
+                                controls=[signup_status]
+                            )        
+                        )
+                    ]
+                )
+            )
+        ]
+
     app_bar = ft.AppBar(
-        leading=ibm_logo,
-        leading_width=100,
-        title=ft.Text("Terminology Lookup"),
+        # leading=ibm_logo,
+        # leading_width=100,
+        title=ft.Text(
+            value="IBM Terms",
+            color=ft.colors.WHITE,
+            style=ft.TextThemeStyle.TITLE_LARGE,
+        ),
         center_title=False,
         bgcolor=ft.colors.BLUE_900,
         color= ft.colors.WHITE,
         actions=[
             ft.PopupMenuButton(
                 icon = ft.icons.ADD,
-                tooltip="Add definition",
+                tooltip="Add definition, need to be logged in",
                 items = add_word_page
             ),
             ft.IconButton(
@@ -315,6 +425,11 @@ class Elements(ft.UserControl):
                 icon = ft.icons.PERSON_ROUNDED,
                 tooltip="Profile",
                 items = login_page
+            ),
+            ft.PopupMenuButton(
+                icon = ft.icons.PERSON_ADD_ROUNDED,
+                tooltip="Sign Up",
+                items = signup_page
             )
         ]
     )

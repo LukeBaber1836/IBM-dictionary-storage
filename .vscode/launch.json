@@ -5,22 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Main Copy",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/src/main_copy.py",
-            "console": "integratedTerminal",
-            "justMyCode": true
-        },
-        {
-            "name": "Supabase Authentication",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/src/supabase_authentication.py",
-            "console": "integratedTerminal",
-            "justMyCode": true
-        },
-        {
             "name": "Supabase debug",
             "type": "python",
             "request": "launch",

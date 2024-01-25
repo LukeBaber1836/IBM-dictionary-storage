@@ -5,9 +5,11 @@ class Dictionary_App(ft.Row):
     def __init__(self, page: ft.Page):
         super().__init__()
         self.page = page
-        self.alignment = ft.alignment.center,
+        self.alignment = ft.alignment.center
+        Dictionary_App.build(self)
 
-        # Main app layout
+
+    def build(self):
         self.page.appbar = Elements.app_bar
         self.controls = [
             Elements.main_left_container,
@@ -16,7 +18,7 @@ class Dictionary_App(ft.Row):
 
 
 def main(page: ft.Page):
-    page.title = "IBM Terminology Lookup"
+    page.title = "IBM Terms"
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
     page.window_center()
     page.theme_mode = ft.ThemeMode.DARK
