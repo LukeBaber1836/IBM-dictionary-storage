@@ -23,15 +23,15 @@ The app is running at: <https://ibm-terms.fly.dev/>
 ## How to Run
 
 1. Clone this repository to your local machine.
-2. Create a .venv to install your dependencies.
+2. Create a `.venv` to install your dependencies.
 3. Install the dependencies:
-'''
+```
 pip3 install -r requirements.txt
-'''
+```
 4. Run the program:
-'''
+```
 flet ./src/main.py
-'''
+```
 5. A window should open up with the running app.
 
 ## Technologies Used
